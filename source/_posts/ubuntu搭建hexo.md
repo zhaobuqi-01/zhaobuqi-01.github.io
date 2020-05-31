@@ -19,9 +19,11 @@ copyright:
 
 ## 改用taobao的npm源
 
-`npm install -g cnpm --registry=https://registry.npm.taobao.orrg` 
+`npm install -g cnpm --registry=https://registry.npm.taobao.org` 
 
 ## 安装hexo
 
 `cnpm install hexo-cli -g`  #-g 表示全局安装
+
+**注意：必须在root模式下安装** 
 
