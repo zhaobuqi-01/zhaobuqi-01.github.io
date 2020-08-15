@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2020-06-12T12:37:23.592Z</updated>
+  <updated>2020-08-15T13:04:52.233Z</updated>
   <id>https://zhaobuqi-01.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>开始学习c++</title>
+    <link href="https://zhaobuqi-01.github.io/2020/08/03/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++/"/>
+    <id>https://zhaobuqi-01.github.io/2020/08/03/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++/</id>
+    <published>2020-08-03T12:02:00.000Z</published>
+    <updated>2020-08-15T13:04:52.233Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;开始学习c&quot;&gt;&lt;a href=&quot;#开始学习c&quot; class=&quot;headerlink&quot; title=&quot;开始学习c++&quot;&gt;&lt;/a&gt;开始学习c++&lt;/h1&gt;&lt;p&gt;注释使用//,C++对大小写敏感，也就是说区分大写字符和小写字符&lt;br&gt;注意在linux中c++的文件扩展名
+      
+    
+    </summary>
+    
+    
+      <category term="C++" scheme="https://zhaobuqi-01.github.io/categories/C/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>ubutun安装qq和微信</title>

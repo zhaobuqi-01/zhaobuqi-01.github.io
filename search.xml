@@ -296,4 +296,21 @@
         <category>linux</category>
       </categories>
   </entry>
+  <entry>
+    <title>开始学习c++</title>
+    <url>/2020/08/03/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++/</url>
+    <content><![CDATA[<h1 id="开始学习c"><a href="#开始学习c" class="headerlink" title="开始学习c++"></a>开始学习c++</h1><p>注释使用//,C++对大小写敏感，也就是说区分大写字符和小写字符<br>注意在linux中c++的文件扩展名为cxx，windows中文件扩展名为cpp</p>
+<h2 id="c-的输入与输出"><a href="#c-的输入与输出" class="headerlink" title="c++的输入与输出"></a>c++的输入与输出</h2><h3 id="main函数"><a href="#main函数" class="headerlink" title="main函数"></a>main函数</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    statements;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这几行表明有一个名为main的函数，并描述了该函数的行为。</p>
+<p>这几行代码构成了函数定义(function definition)。</p>
+<blockquote>
+<p>函数定义由两部分组成：函数头，函数体。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">&gt;<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span><span class="comment">//第一行 int mian() 叫函数头</span></span></span><br><span class="line"><span class="function">&gt;</span>&#123;</span><br><span class="line">   statements;</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&gt;&#125;<span class="comment">//花括号(&#123;和&#125;)中包括的部分叫函数体。</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+  </entry>
 </search>
