@@ -326,4 +326,21 @@
         <category>hexo的使用</category>
       </categories>
   </entry>
+  <entry>
+    <title>git学习2</title>
+    <url>/2020/09/07/git%E5%AD%A6%E4%B9%A02/</url>
+    <content><![CDATA[<h1 id="git命令的补充"><a href="#git命令的补充" class="headerlink" title="git命令的补充"></a>git命令的补充</h1><ol>
+<li>git add . <strong>提交全部文件到暂存区</strong></li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>哈哈</title>
+    <url>/2020/06/12/%E5%93%88%E5%93%88/</url>
+    <content><![CDATA[]]></content>
+  </entry>
 </search>
