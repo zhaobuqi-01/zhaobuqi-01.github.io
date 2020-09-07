@@ -313,4 +313,17 @@
         <category>C++</category>
       </categories>
   </entry>
+  <entry>
+    <title>hexo常用指令</title>
+    <url>/2020/09/07/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<p>*<em>1.hexo n *</em> 新建一篇文章</p>
+<p>*<em>2. hexo init *</em> 初始化一个网站</p>
+<p>*<em>3. hexo g *</em> 生成静态文件，在发布到GitHub前需要先生成静态文件</p>
+<p>*<em>4. hexo s *</em> 启动服务器，可以在本地访问，访问地址为<code>http://localhost:4000/</code></p>
+<p>*<em>5. hexo d *</em> 部署网站【发布到GitHub】 </p>
+]]></content>
+      <categories>
+        <category>hexo的使用</category>
+      </categories>
+  </entry>
 </search>
