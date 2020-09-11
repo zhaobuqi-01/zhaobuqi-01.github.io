@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2020-09-08T13:11:03.088Z</updated>
-  <id>https://zhaobuqi-01.github.io/</id>
+  <link href="https://zhaobuqi.gitee.io/"/>
+  <updated>2020-09-11T12:45:14.805Z</updated>
+  <id>https://zhaobuqi.gitee.io/</id>
   
   <author>
     <name>赵不器</name>
@@ -17,24 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>go程序结构</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/08/go%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/08/go%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84/</id>
+    <title>入门</title>
+    <link href="https://zhaobuqi.gitee.io/2020/09/08/go%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84/"/>
+    <id>https://zhaobuqi.gitee.io/2020/09/08/go%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84/</id>
     <published>2020-09-08T13:11:03.000Z</published>
-    <updated>2020-09-08T13:11:03.088Z</updated>
+    <updated>2020-09-11T12:45:14.805Z</updated>
     
     <summary type="html">
     
+      
+      
+        &lt;h1 id=&quot;hello-world&quot;&gt;&lt;a href=&quot;#hello-world&quot; class=&quot;headerlink&quot; title=&quot;hello world&quot;&gt;&lt;/a&gt;hello world&lt;/h1&gt;&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;
+      
+    
     </summary>
     
+    
+      <category term="go" scheme="https://zhaobuqi.gitee.io/categories/go/"/>
     
     
   </entry>
   
   <entry>
     <title>git学习2</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/07/git%E5%AD%A6%E4%B9%A02/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/07/git%E5%AD%A6%E4%B9%A02/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/09/07/git%E5%AD%A6%E4%B9%A02/"/>
+    <id>https://zhaobuqi.gitee.io/2020/09/07/git%E5%AD%A6%E4%B9%A02/</id>
     <published>2020-09-07T13:23:24.000Z</published>
     <updated>2020-09-07T13:45:58.828Z</updated>
     
@@ -49,15 +56,15 @@
     </summary>
     
     
-      <category term="git" scheme="https://zhaobuqi-01.github.io/categories/git/"/>
+      <category term="git" scheme="https://zhaobuqi.gitee.io/categories/git/"/>
     
     
   </entry>
   
   <entry>
     <title>hexo常用指令</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/07/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/07/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/09/07/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
+    <id>https://zhaobuqi.gitee.io/2020/09/07/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</id>
     <published>2020-09-07T12:53:20.000Z</published>
     <updated>2020-09-07T13:45:58.828Z</updated>
     
@@ -74,15 +81,15 @@
     </summary>
     
     
-      <category term="hexo的使用" scheme="https://zhaobuqi-01.github.io/categories/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+      <category term="hexo的使用" scheme="https://zhaobuqi.gitee.io/categories/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     
     
   </entry>
   
   <entry>
     <title>开始学习c++</title>
-    <link href="https://zhaobuqi-01.github.io/2020/08/03/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++/"/>
-    <id>https://zhaobuqi-01.github.io/2020/08/03/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/08/03/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++/"/>
+    <id>https://zhaobuqi.gitee.io/2020/08/03/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++/</id>
     <published>2020-08-03T12:02:00.000Z</published>
     <updated>2020-09-07T13:45:58.799Z</updated>
     
@@ -96,15 +103,15 @@
     </summary>
     
     
-      <category term="C++" scheme="https://zhaobuqi-01.github.io/categories/C/"/>
+      <category term="C++" scheme="https://zhaobuqi.gitee.io/categories/C/"/>
     
     
   </entry>
   
   <entry>
     <title>哈哈</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/12/%E5%93%88%E5%93%88/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/12/%E5%93%88%E5%93%88/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/06/12/%E5%93%88%E5%93%88/"/>
+    <id>https://zhaobuqi.gitee.io/2020/06/12/%E5%93%88%E5%93%88/</id>
     <published>2020-06-12T13:02:59.000Z</published>
     <updated>2020-09-07T13:45:58.767Z</updated>
     
@@ -118,8 +125,8 @@
   
   <entry>
     <title>ubutun安装qq和微信</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/12/ubuntu%E5%AE%89%E8%A3%85qq%E5%92%8C%E5%BE%AE%E4%BF%A1/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/12/ubuntu%E5%AE%89%E8%A3%85qq%E5%92%8C%E5%BE%AE%E4%BF%A1/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/06/12/ubuntu%E5%AE%89%E8%A3%85qq%E5%92%8C%E5%BE%AE%E4%BF%A1/"/>
+    <id>https://zhaobuqi.gitee.io/2020/06/12/ubuntu%E5%AE%89%E8%A3%85qq%E5%92%8C%E5%BE%AE%E4%BF%A1/</id>
     <published>2020-06-12T12:37:23.592Z</published>
     <updated>2020-06-12T12:37:23.592Z</updated>
     
@@ -133,17 +140,17 @@
     </summary>
     
     
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
+      <category term="linux" scheme="https://zhaobuqi.gitee.io/categories/linux/"/>
     
     
-      <category term="deepin" scheme="https://zhaobuqi-01.github.io/tags/deepin/"/>
+      <category term="deepin" scheme="https://zhaobuqi.gitee.io/tags/deepin/"/>
     
   </entry>
   
   <entry>
     <title>系统的备份与还原</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/03/%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E8%BF%98%E5%8E%9F/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/03/%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E8%BF%98%E5%8E%9F/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/06/03/%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E8%BF%98%E5%8E%9F/"/>
+    <id>https://zhaobuqi.gitee.io/2020/06/03/%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E8%BF%98%E5%8E%9F/</id>
     <published>2020-06-03T09:27:44.000Z</published>
     <updated>2020-06-12T12:37:23.595Z</updated>
     
@@ -157,15 +164,15 @@
     </summary>
     
     
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
+      <category term="linux" scheme="https://zhaobuqi.gitee.io/categories/linux/"/>
     
     
   </entry>
   
   <entry>
     <title>linux-打包与解压缩</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/03/linux-%E6%89%93%E5%8C%85%E4%B8%8E%E8%A7%A3%E5%8E%8B%E7%BC%A9/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/03/linux-%E6%89%93%E5%8C%85%E4%B8%8E%E8%A7%A3%E5%8E%8B%E7%BC%A9/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/06/03/linux-%E6%89%93%E5%8C%85%E4%B8%8E%E8%A7%A3%E5%8E%8B%E7%BC%A9/"/>
+    <id>https://zhaobuqi.gitee.io/2020/06/03/linux-%E6%89%93%E5%8C%85%E4%B8%8E%E8%A7%A3%E5%8E%8B%E7%BC%A9/</id>
     <published>2020-06-03T08:35:13.000Z</published>
     <updated>2020-06-12T12:37:23.577Z</updated>
     
@@ -179,15 +186,15 @@
     </summary>
     
     
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
+      <category term="linux" scheme="https://zhaobuqi.gitee.io/categories/linux/"/>
     
     
   </entry>
   
   <entry>
     <title>linux_ls</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/03/linux-ls/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/03/linux-ls/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/06/03/linux-ls/"/>
+    <id>https://zhaobuqi.gitee.io/2020/06/03/linux-ls/</id>
     <published>2020-06-03T08:15:49.000Z</published>
     <updated>2020-06-12T12:37:23.576Z</updated>
     
@@ -201,15 +208,15 @@
     </summary>
     
     
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
+      <category term="linux" scheme="https://zhaobuqi.gitee.io/categories/linux/"/>
     
     
   </entry>
   
   <entry>
     <title>linux_帮助命令</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/03/linux-%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/03/linux-%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/06/03/linux-%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4/"/>
+    <id>https://zhaobuqi.gitee.io/2020/06/03/linux-%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4/</id>
     <published>2020-06-03T07:25:45.000Z</published>
     <updated>2020-06-12T12:37:23.576Z</updated>
     
@@ -228,15 +235,15 @@
     </summary>
     
     
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
+      <category term="linux" scheme="https://zhaobuqi.gitee.io/categories/linux/"/>
     
     
   </entry>
   
   <entry>
     <title>linux_目录</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/03/linux-%E7%9B%AE%E5%BD%95/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/03/linux-%E7%9B%AE%E5%BD%95/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/06/03/linux-%E7%9B%AE%E5%BD%95/"/>
+    <id>https://zhaobuqi.gitee.io/2020/06/03/linux-%E7%9B%AE%E5%BD%95/</id>
     <published>2020-06-03T07:18:48.000Z</published>
     <updated>2020-06-12T12:37:23.578Z</updated>
     
@@ -252,15 +259,15 @@
     </summary>
     
     
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
+      <category term="linux" scheme="https://zhaobuqi.gitee.io/categories/linux/"/>
     
     
   </entry>
   
   <entry>
     <title>ubuntu下ssh的使用</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/02/ubuntu%E4%B8%8Bssh%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/02/ubuntu%E4%B8%8Bssh%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/06/02/ubuntu%E4%B8%8Bssh%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://zhaobuqi.gitee.io/2020/06/02/ubuntu%E4%B8%8Bssh%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
     <published>2020-06-02T13:59:06.000Z</published>
     <updated>2020-06-12T12:37:23.579Z</updated>
     
@@ -274,17 +281,17 @@
     </summary>
     
     
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
+      <category term="linux" scheme="https://zhaobuqi.gitee.io/categories/linux/"/>
     
     
-      <category term="ssh" scheme="https://zhaobuqi-01.github.io/tags/ssh/"/>
+      <category term="ssh" scheme="https://zhaobuqi.gitee.io/tags/ssh/"/>
     
   </entry>
   
   <entry>
     <title>ubuntu安装百度输入法</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/02/ubuntu%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E8%BE%93%E5%85%A5%E6%B3%95/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/02/ubuntu%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E8%BE%93%E5%85%A5%E6%B3%95/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/06/02/ubuntu%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E8%BE%93%E5%85%A5%E6%B3%95/"/>
+    <id>https://zhaobuqi.gitee.io/2020/06/02/ubuntu%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E8%BE%93%E5%85%A5%E6%B3%95/</id>
     <published>2020-06-02T13:44:05.000Z</published>
     <updated>2020-06-12T12:37:23.593Z</updated>
     
@@ -303,8 +310,8 @@
   
   <entry>
     <title>git学习</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/01/git%E5%AD%A6%E4%B9%A0/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/01/git%E5%AD%A6%E4%B9%A0/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/06/01/git%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://zhaobuqi.gitee.io/2020/06/01/git%E5%AD%A6%E4%B9%A0/</id>
     <published>2020-06-01T14:22:37.000Z</published>
     <updated>2020-06-12T12:37:23.575Z</updated>
     
@@ -318,15 +325,15 @@
     </summary>
     
     
-      <category term="git" scheme="https://zhaobuqi-01.github.io/categories/git/"/>
+      <category term="git" scheme="https://zhaobuqi.gitee.io/categories/git/"/>
     
     
   </entry>
   
   <entry>
     <title>ubuntu安装typora</title>
-    <link href="https://zhaobuqi-01.github.io/2020/05/31/ubuntu%E5%AE%89%E8%A3%85typora/"/>
-    <id>https://zhaobuqi-01.github.io/2020/05/31/ubuntu%E5%AE%89%E8%A3%85typora/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/05/31/ubuntu%E5%AE%89%E8%A3%85typora/"/>
+    <id>https://zhaobuqi.gitee.io/2020/05/31/ubuntu%E5%AE%89%E8%A3%85typora/</id>
     <published>2020-05-31T14:41:12.000Z</published>
     <updated>2020-06-12T12:37:23.592Z</updated>
     
@@ -340,17 +347,17 @@
     </summary>
     
     
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
+      <category term="linux" scheme="https://zhaobuqi.gitee.io/categories/linux/"/>
     
     
-      <category term="typora" scheme="https://zhaobuqi-01.github.io/tags/typora/"/>
+      <category term="typora" scheme="https://zhaobuqi.gitee.io/tags/typora/"/>
     
   </entry>
   
   <entry>
     <title>本地分支推送到远程分支</title>
-    <link href="https://zhaobuqi-01.github.io/2020/05/28/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/"/>
-    <id>https://zhaobuqi-01.github.io/2020/05/28/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/05/28/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/"/>
+    <id>https://zhaobuqi.gitee.io/2020/05/28/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/</id>
     <published>2020-05-28T15:53:49.000Z</published>
     <updated>2020-06-12T12:37:23.594Z</updated>
     
@@ -364,17 +371,17 @@
     </summary>
     
     
-      <category term="git" scheme="https://zhaobuqi-01.github.io/categories/git/"/>
+      <category term="git" scheme="https://zhaobuqi.gitee.io/categories/git/"/>
     
     
-      <category term="git push" scheme="https://zhaobuqi-01.github.io/tags/git-push/"/>
+      <category term="git push" scheme="https://zhaobuqi.gitee.io/tags/git-push/"/>
     
   </entry>
   
   <entry>
     <title>如何在ubutun20.04下搭建hexo环境</title>
-    <link href="https://zhaobuqi-01.github.io/2020/05/28/ubuntu%E6%90%AD%E5%BB%BAhexo/"/>
-    <id>https://zhaobuqi-01.github.io/2020/05/28/ubuntu%E6%90%AD%E5%BB%BAhexo/</id>
+    <link href="https://zhaobuqi.gitee.io/2020/05/28/ubuntu%E6%90%AD%E5%BB%BAhexo/"/>
+    <id>https://zhaobuqi.gitee.io/2020/05/28/ubuntu%E6%90%AD%E5%BB%BAhexo/</id>
     <published>2020-05-28T13:36:59.000Z</published>
     <updated>2020-06-12T12:37:23.593Z</updated>
     
@@ -389,14 +396,14 @@
     </summary>
     
     
-      <category term="hexo的使用" scheme="https://zhaobuqi-01.github.io/categories/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+      <category term="hexo的使用" scheme="https://zhaobuqi.gitee.io/categories/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="hexo" scheme="https://zhaobuqi-01.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="https://zhaobuqi.gitee.io/tags/hexo/"/>
     
-      <category term="npm" scheme="https://zhaobuqi-01.github.io/tags/npm/"/>
+      <category term="npm" scheme="https://zhaobuqi.gitee.io/tags/npm/"/>
     
-      <category term="nodejs" scheme="https://zhaobuqi-01.github.io/tags/nodejs/"/>
+      <category term="nodejs" scheme="https://zhaobuqi.gitee.io/tags/nodejs/"/>
     
   </entry>
   

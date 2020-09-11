@@ -344,8 +344,24 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>go程序结构</title>
+    <title>入门</title>
     <url>/2020/09/08/go%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h1 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h1><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"><span class="comment">//main 包比较特殊。它定义了一个独立可执行的程序，而不是一个库</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//一个函数的声明由 func 关键字、函数名、参数列表、返回值列表以及包含在大括号里的函数体组成</span></span><br><span class="line">    fmt.Println(<span class="string">"hello,世界"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>go run test.go</code></p>
+<p>Hello,world.你好，世界！</p>
+</blockquote>
+<p>Go语言的代码通过包（package）组织，包类似于其他语言里的库（libraies）或者模块（modules）.</p>
+<p>一个包位于单个目录下的一个或多个.go源代码文件组成，目录定义报的作用。</p>
+<p><strong>每个源代码都以一条<code>package</code> 声明语句开始</strong> ，这个例子里就是<code>package main</code> ,<strong>表示该文件属于哪个包</strong> ，紧跟着一系列导入（import)的包，之后是存储在这个文件里的程序语句。</p>
+<p><strong><em>必须告诉编译器源文件需要哪些包，这就是跟随在<code>package</code> 声明后面的<code>import</code> 声明扮演的角色。</em></strong> </p>
+<p><em>必须恰当需要的包，缺少了必要的包或者导入了不需要的包，程序都无法编译通过。</em></p>
+<p><strong><code>import</code> 声明必须跟在文件的<code>package</code> 声明之后。</strong>随后，则是组成程序的函数，变量，常量，类型的声明语句。这些内容的声明顺序并不重要。</p>
+<p><strong>Go语言不需要在语句或者声明的末尾添加分号，除非一行上有多条语句</strong> </p>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
   </entry>
 </search>
