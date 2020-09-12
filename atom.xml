@@ -42,21 +42,6 @@
   </entry>
   
   <entry>
-    <title>go语言语法要求和注意事项</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/12/go%E8%AF%AD%E8%A8%80%E8%AF%AD%E6%B3%95%E8%A6%81%E6%B1%82%E5%92%8C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/12/go%E8%AF%AD%E8%A8%80%E8%AF%AD%E6%B3%95%E8%A6%81%E6%B1%82%E5%92%8C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
-    <published>2020-09-12T11:45:52.000Z</published>
-    <updated>2020-09-12T11:45:52.266Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>go执行流程</title>
     <link href="https://zhaobuqi-01.github.io/2020/09/11/go%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/"/>
     <id>https://zhaobuqi-01.github.io/2020/09/11/go%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/</id>
@@ -458,6 +443,35 @@
     
     
       <category term="git push" scheme="https://zhaobuqi-01.github.io/tags/git-push/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何在ubutun20.04下搭建hexo环境</title>
+    <link href="https://zhaobuqi-01.github.io/2020/05/28/ubuntu%E6%90%AD%E5%BB%BAhexo/"/>
+    <id>https://zhaobuqi-01.github.io/2020/05/28/ubuntu%E6%90%AD%E5%BB%BAhexo/</id>
+    <published>2020-05-28T13:36:59.000Z</published>
+    <updated>2020-06-12T12:37:24.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;安装nodejs&quot;&gt;&lt;a href=&quot;#安装nodejs&quot; class=&quot;headerlink&quot; title=&quot;安装nodejs&quot;&gt;&lt;/a&gt;安装nodejs&lt;/h2&gt;&lt;p&gt;&lt;code&gt;sudo apt install nodejs&lt;/code&gt;&lt;/p&gt;
+&lt;h2 i
+      
+    
+    </summary>
+    
+    
+      <category term="hexo的使用" scheme="https://zhaobuqi-01.github.io/categories/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="hexo" scheme="https://zhaobuqi-01.github.io/tags/hexo/"/>
+    
+      <category term="npm" scheme="https://zhaobuqi-01.github.io/tags/npm/"/>
+    
+      <category term="nodejs" scheme="https://zhaobuqi-01.github.io/tags/nodejs/"/>
     
   </entry>
   
