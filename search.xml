@@ -364,4 +364,112 @@
         <tag>git push</tag>
       </tags>
   </entry>
+  <entry>
+    <title>dos的常用命令介绍</title>
+    <url>/2020/09/12/dos%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h2 id="dos的常用命令介绍"><a href="#dos的常用命令介绍" class="headerlink" title="dos的常用命令介绍"></a>dos的常用命令介绍</h2><ol>
+<li>查看当前目录是什么 </li>
+</ol>
+<p><strong>dir</strong> </p>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line"><span class="function">D:\<span class="title">demo</span>&gt;<span class="title">dir</span></span></span><br><span class="line"><span class="function"> 驱动器 <span class="title">D</span> 中的卷是 <span class="title">Data</span></span></span><br><span class="line"><span class="function"> 卷的序列号是 543<span class="title">D</span>-<span class="title">EB9C</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"> <span class="title">D</span>:\<span class="title">demo</span> 的目录</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">2020/09/12  19:35    &lt;<span class="title">DIR</span>&gt;          .</span></span><br><span class="line"><span class="function">2020/09/12  19:35    &lt;<span class="title">DIR</span>&gt;          ..</span></span><br><span class="line"><span class="function">2020/09/12  19:35         2,141,184 <span class="title">myhello.exe</span></span></span><br><span class="line"><span class="function">2020/09/11  20:11         2,141,184 <span class="title">test.exe</span></span></span><br><span class="line"><span class="function">2020/09/11  20:09                91 <span class="title">test.go</span></span></span><br><span class="line"><span class="function">               3 个文件      4,282,459 字节</span></span><br><span class="line"><span class="function">               2 个目录 392,539,840,512 可用字节</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>切换到其他盘符</li>
+</ol>
+<p><strong>cd /d f:</strong> </p>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line"><span class="function">D:\<span class="title">demo</span>&gt;<span class="title">cd</span> /<span class="title">d</span> <span class="title">e</span>:</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="title">E</span>:\&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>切换目录</li>
+</ol>
+<p><strong>cd d:\demo</strong> </p>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line"><span class="function">E:\&gt;<span class="title">cd</span> <span class="title">e</span>:\<span class="title">Doweload</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="title">e</span>:\<span class="title">Doweload</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>切换到根目录</li>
+</ol>
+<p>*<em>cd \ *</em> </p>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line"><span class="function">e:\<span class="title">Doweload</span>&gt;<span class="title">cd</span> \</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="title">e</span>:\&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>新建目录</li>
+</ol>
+<p><strong>md</strong> </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">e:\&gt;md test</span><br><span class="line"></span><br><span class="line">e:\&gt;dir</span><br><span class="line"> 驱动器 E 中的卷是 新加卷</span><br><span class="line"> 卷的序列号是 30EC-F122</span><br><span class="line"></span><br><span class="line"> e:\ 的目录</span><br><span class="line"></span><br><span class="line">2020&#x2F;09&#x2F;10  18:53    &lt;DIR&gt;          dingchunhui</span><br><span class="line">2020&#x2F;09&#x2F;12  21:13    &lt;DIR&gt;          Doweload</span><br><span class="line">2020&#x2F;09&#x2F;12  22:13    &lt;DIR&gt;          test</span><br><span class="line">2020&#x2F;09&#x2F;11  19:53    &lt;DIR&gt;          ubutun20.04</span><br><span class="line">2020&#x2F;09&#x2F;11  00:23    &lt;DIR&gt;          VM</span><br><span class="line">2020&#x2F;09&#x2F;11  00:35    &lt;DIR&gt;          新建文件夹</span><br><span class="line">               0 个文件              0 字节</span><br><span class="line">               6 个目录 983,124,643,840 可用字节</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>删除目录</li>
+</ol>
+<p><strong>rd</strong></p>
+<p>rd /q 不询问</p>
+<p>rd /s 当目录里有文件时使用这个</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">e:\&gt;dir</span><br><span class="line"> 驱动器 E 中的卷是 新加卷</span><br><span class="line"> 卷的序列号是 30EC-F122</span><br><span class="line"></span><br><span class="line"> e:\ 的目录</span><br><span class="line"></span><br><span class="line">2020&#x2F;09&#x2F;10  18:53    &lt;DIR&gt;          dingchunhui</span><br><span class="line">2020&#x2F;09&#x2F;12  21:13    &lt;DIR&gt;          Doweload</span><br><span class="line">2020&#x2F;09&#x2F;12  22:13    &lt;DIR&gt;          test</span><br><span class="line">2020&#x2F;09&#x2F;11  19:53    &lt;DIR&gt;          ubutun20.04</span><br><span class="line">2020&#x2F;09&#x2F;11  00:23    &lt;DIR&gt;          VM</span><br><span class="line">2020&#x2F;09&#x2F;11  00:35    &lt;DIR&gt;          新建文件夹</span><br><span class="line">               0 个文件              0 字节</span><br><span class="line">               6 个目录 983,124,643,840 可用字节</span><br><span class="line"></span><br><span class="line">e:\&gt;rd test</span><br><span class="line"></span><br><span class="line">e:\&gt;dir</span><br><span class="line"> 驱动器 E 中的卷是 新加卷</span><br><span class="line"> 卷的序列号是 30EC-F122</span><br><span class="line"></span><br><span class="line"> e:\ 的目录</span><br><span class="line"></span><br><span class="line">2020&#x2F;09&#x2F;10  18:53    &lt;DIR&gt;          dingchunhui</span><br><span class="line">2020&#x2F;09&#x2F;12  21:13    &lt;DIR&gt;          Doweload</span><br><span class="line">2020&#x2F;09&#x2F;11  19:53    &lt;DIR&gt;          ubutun20.04</span><br><span class="line">2020&#x2F;09&#x2F;11  00:23    &lt;DIR&gt;          VM</span><br><span class="line">2020&#x2F;09&#x2F;11  00:35    &lt;DIR&gt;          新建文件夹</span><br><span class="line">               0 个文件              0 字节</span><br><span class="line">               5 个目录 983,124,643,840 可用字节</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li>echo指令</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">e:\&gt;echo hello &gt; Doweload\test.txt</span><br><span class="line"></span><br><span class="line">e:\&gt;dir Doweload</span><br><span class="line"> 驱动器 E 中的卷是 新加卷</span><br><span class="line"> 卷的序列号是 30EC-F122</span><br><span class="line"></span><br><span class="line"> e:\Doweload 的目录</span><br><span class="line"></span><br><span class="line">2020&#x2F;09&#x2F;12  22:21    &lt;DIR&gt;          .</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21    &lt;DIR&gt;          ..</span><br><span class="line">2020&#x2F;09&#x2F;11  13:21       113,897,472 boinc_7.16.11_windows_x86_64_vbox.exe</span><br><span class="line">2020&#x2F;09&#x2F;11  13:23    &lt;DIR&gt;          briblo_103</span><br><span class="line">2020&#x2F;09&#x2F;11  13:18         3,807,157 briblo_103.zip</span><br><span class="line">2020&#x2F;09&#x2F;12  19:12         1,550,147 C 学习笔记.pdf</span><br><span class="line">2020&#x2F;09&#x2F;11  13:16    &lt;DIR&gt;          fliqlo_133</span><br><span class="line">2020&#x2F;09&#x2F;11  13:16         3,804,811 fliqlo_133.zip</span><br><span class="line">2020&#x2F;09&#x2F;12  19:14         1,014,280 Go 1.5 源码剖析 （书签版）.pdf</span><br><span class="line">2020&#x2F;09&#x2F;12  19:12         1,365,184 Go 学习笔记 第四版.pdf</span><br><span class="line">2020&#x2F;09&#x2F;11  13:17         4,339,940 Hubble3D_PCScreensaver.exe</span><br><span class="line">2020&#x2F;09&#x2F;12  21:13    &lt;DIR&gt;          MLofAndrew-Ng-master</span><br><span class="line">2020&#x2F;09&#x2F;11  13:52        36,728,520 Qv2ray.v2.6.3.linux-x64 (1).AppImage</span><br><span class="line">2020&#x2F;09&#x2F;11  13:51        36,728,520 Qv2ray.v2.6.3.linux-x64.AppImage</span><br><span class="line">2020&#x2F;09&#x2F;10  19:23    &lt;DIR&gt;          TeamViewerPortable</span><br><span class="line">2020&#x2F;09&#x2F;10  19:22        27,316,451 TeamViewerPortable.rar</span><br><span class="line">2020&#x2F;09&#x2F;10  19:21        28,032,224 TeamViewer_Setup.exe</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21                 8 test.txt</span><br><span class="line">2020&#x2F;09&#x2F;11  00:22       579,181,704 VMware-workstation-full-15.5.6-16341506.exe</span><br><span class="line">2020&#x2F;09&#x2F;11  00:18             1,617 vmwarepro_16025.zip</span><br><span class="line">2020&#x2F;09&#x2F;12  19:12           235,516 下载.png</span><br><span class="line">              15 个文件    838,003,551 字节</span><br><span class="line">               6 个目录 983,124,643,840 可用字节</span><br></pre></td></tr></table></figure>
+
+<ol start="8">
+<li>复制文件</li>
+</ol>
+<p><strong>copy</strong>  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">e:\&gt;copy Doweload\test.txt e\</span><br><span class="line">系统找不到指定的路径。</span><br><span class="line">已复制         0 个文件。</span><br><span class="line"></span><br><span class="line">e:\&gt;copy Doweload\test.txt e:\</span><br><span class="line">已复制         1 个文件。</span><br><span class="line"></span><br><span class="line">e:\&gt;dir</span><br><span class="line"> 驱动器 E 中的卷是 新加卷</span><br><span class="line"> 卷的序列号是 30EC-F122</span><br><span class="line"></span><br><span class="line"> e:\ 的目录</span><br><span class="line"></span><br><span class="line">2020&#x2F;09&#x2F;10  18:53    &lt;DIR&gt;          dingchunhui</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21    &lt;DIR&gt;          Doweload</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21                 8 test.txt</span><br><span class="line">2020&#x2F;09&#x2F;11  19:53    &lt;DIR&gt;          ubutun20.04</span><br><span class="line">2020&#x2F;09&#x2F;11  00:23    &lt;DIR&gt;          VM</span><br><span class="line">2020&#x2F;09&#x2F;11  00:35    &lt;DIR&gt;          新建文件夹</span><br><span class="line">               1 个文件              8 字节</span><br><span class="line">               5 个目录 983,124,643,840 可用字节</span><br><span class="line"></span><br><span class="line">e:\&gt;copy Doweload\test.txt e:\hello.txt</span><br><span class="line">已复制         1 个文件。</span><br><span class="line"></span><br><span class="line">e:\&gt;dir</span><br><span class="line"> 驱动器 E 中的卷是 新加卷</span><br><span class="line"> 卷的序列号是 30EC-F122</span><br><span class="line"></span><br><span class="line"> e:\ 的目录</span><br><span class="line"></span><br><span class="line">2020&#x2F;09&#x2F;10  18:53    &lt;DIR&gt;          dingchunhui</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21    &lt;DIR&gt;          Doweload</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21                 8 hello.txt</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21                 8 test.txt</span><br><span class="line">2020&#x2F;09&#x2F;11  19:53    &lt;DIR&gt;          ubutun20.04</span><br><span class="line">2020&#x2F;09&#x2F;11  00:23    &lt;DIR&gt;          VM</span><br><span class="line">2020&#x2F;09&#x2F;11  00:35    &lt;DIR&gt;          新建文件夹</span><br><span class="line">               2 个文件             16 字节</span><br><span class="line">               5 个目录 983,124,643,840 可用字节</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="9">
+<li>删除文件</li>
+</ol>
+<p><strong>del</strong> 文件名</p>
+<p>del * 删除全部文件</p>
+<p>del *.txt</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">e:\&gt;dir</span><br><span class="line"> 驱动器 E 中的卷是 新加卷</span><br><span class="line"> 卷的序列号是 30EC-F122</span><br><span class="line"></span><br><span class="line"> e:\ 的目录</span><br><span class="line"></span><br><span class="line">2020&#x2F;09&#x2F;10  18:53    &lt;DIR&gt;          dingchunhui</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21    &lt;DIR&gt;          Doweload</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21                 8 hello.txt</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21                 8 test.txt</span><br><span class="line">2020&#x2F;09&#x2F;11  19:53    &lt;DIR&gt;          ubutun20.04</span><br><span class="line">2020&#x2F;09&#x2F;11  00:23    &lt;DIR&gt;          VM</span><br><span class="line">2020&#x2F;09&#x2F;11  00:35    &lt;DIR&gt;          新建文件夹</span><br><span class="line">               2 个文件             16 字节</span><br><span class="line">               5 个目录 983,124,643,840 可用字节</span><br><span class="line"></span><br><span class="line">e:\&gt;del test.txt</span><br><span class="line"></span><br><span class="line">e:\&gt;dir</span><br><span class="line"> 驱动器 E 中的卷是 新加卷</span><br><span class="line"> 卷的序列号是 30EC-F122</span><br><span class="line"></span><br><span class="line"> e:\ 的目录</span><br><span class="line"></span><br><span class="line">2020&#x2F;09&#x2F;10  18:53    &lt;DIR&gt;          dingchunhui</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21    &lt;DIR&gt;          Doweload</span><br><span class="line">2020&#x2F;09&#x2F;12  22:21                 8 hello.txt</span><br><span class="line">2020&#x2F;09&#x2F;11  19:53    &lt;DIR&gt;          ubutun20.04</span><br><span class="line">2020&#x2F;09&#x2F;11  00:23    &lt;DIR&gt;          VM</span><br><span class="line">2020&#x2F;09&#x2F;11  00:35    &lt;DIR&gt;          新建文件夹</span><br><span class="line">               1 个文件              8 字节</span><br><span class="line">               5 个目录 983,124,643,840 可用字节</span><br></pre></td></tr></table></figure>
+
+<ol start="10">
+<li>清屏</li>
+</ol>
+<p><strong>cls</strong> </p>
+<ol start="11">
+<li>推出dos</li>
+</ol>
+<p><strong>exit</strong> </p>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>go执行流程</title>
+    <url>/2020/09/11/go%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="Golang执行流程分析"><a href="#Golang执行流程分析" class="headerlink" title="Golang执行流程分析"></a>Golang执行流程分析</h1><p><code>go build</code></p>
+<p>go源文件<strong>—-&gt;</strong> </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>入门</title>
+    <url>/2020/09/08/go%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<h1 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h1><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"><span class="comment">//main 包比较特殊。它定义了一个独立可执行的程序，而不是一个库</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//一个函数的声明由 func 关键字、函数名、参数列表、返回值列表以及包含在大括号里的函数体组成</span></span><br><span class="line">    fmt.Println(<span class="string">"hello,世界"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>go run test.go</code></p>
+<p>Hello,world.你好，世界！</p>
+</blockquote>
+<p>Go语言的代码通过包（package）组织，包类似于其他语言里的库（libraies）或者模块（modules）.</p>
+<p>一个包位于单个目录下的一个或多个.go源代码文件组成，目录定义报的作用。</p>
+<p><strong>每个源代码都以一条<code>package</code> 声明语句开始</strong> ，这个例子里就是<code>package main</code> ,<strong>表示该文件属于哪个包</strong> ，紧跟着一系列导入（import)的包，之后是存储在这个文件里的程序语句。</p>
+<p><strong><em>必须告诉编译器源文件需要哪些包，这就是跟随在<code>package</code> 声明后面的<code>import</code> 声明扮演的角色。</em></strong> </p>
+<p><em>必须恰当需要的包，缺少了必要的包或者导入了不需要的包，程序都无法编译通过。</em></p>
+<p><strong><code>import</code> 声明必须跟在文件的<code>package</code> 声明之后。</strong>随后，则是组成程序的函数，变量，常量，类型的声明语句。这些内容的声明顺序并不重要。</p>
+<p><strong>Go语言不需要在语句或者声明的末尾添加分号，除非一行上有多条语句</strong> </p>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>go语言语法要求和注意事项</title>
+    <url>/2020/09/12/go%E8%AF%AD%E8%A8%80%E8%AF%AD%E6%B3%95%E8%A6%81%E6%B1%82%E5%92%8C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+    <content><![CDATA[]]></content>
+  </entry>
 </search>
