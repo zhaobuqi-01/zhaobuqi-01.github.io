@@ -436,4 +436,65 @@
         <category>算法</category>
       </categories>
   </entry>
+  <entry>
+    <title>修改路由器wife账号密码</title>
+    <url>/2020/09/13/%E4%BF%AE%E6%94%B9%E8%B7%AF%E7%94%B1%E5%99%A8wife%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/</url>
+    <content><![CDATA[<h1 id="修改wife账号密码"><a href="#修改wife账号密码" class="headerlink" title="修改wife账号密码"></a>修改wife账号密码</h1><p><strong>修改流程</strong> </p>
+<ol>
+<li><p>连接</p>
+<ol>
+<li>用网线将电脑与路由器lan口连接</li>
+<li>或者电脑连上路由器的wife</li>
+</ol>
+</li>
+<li><p>进入路由器后台1922.168.2.1或者192.168.1.1</p>
+</li>
+</ol>
+<p>在网页输入192.168.1.1或者192.168.2.1即可，登录默认密码为admin</p>
+<p><img src="https://i.loli.net/2020/09/13/rdiRTgvj2of75zI.png" alt="image.png"> </p>
+<p><img src="https://i.loli.net/2020/09/13/Od9FIZcDlVqmawt.png" alt="image.png"> </p>
+<ol start="3">
+<li><p>输入密码登录，默认密码为admin</p>
+</li>
+<li><p>点击左边的网络–无线或者无线设置</p>
+<p>1.网络–无线</p>
+<p><img src="https://i.loli.net/2020/09/13/dCWpL9FasuXDtr3.png" alt="image.png"> </p>
+<p>点击修改（下面的5G同理）</p>
+<p>在基础设置里<strong>ESSID填写wife名称</strong> </p>
+<p>在无线安全里<strong>加密选择WPA@-P5X</strong>   *<em>算法自动  密码自行设置 *</em> </p>
+<p><strong><em>然后保存应用</em></strong> </p>
+<ol start="2">
+<li><p>无线设置</p>
+<p>傻瓜式操作</p>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>西邮学号宽带绑定</title>
+    <url>/2020/09/13/%E8%A5%BF%E9%82%AE%E5%AD%A6%E5%8F%B7%E5%AE%BD%E5%B8%A6%E7%BB%91%E5%AE%9A/</url>
+    <content><![CDATA[<h1 id="绑定教程"><a href="#绑定教程" class="headerlink" title="绑定教程"></a>绑定教程</h1><p><strong>绑定流程</strong> </p>
+<ol>
+<li>自助服务系统绑定账号</li>
+<li>安装上网客户端</li>
+<li>使用学号密码登录网络确定绑定成功</li>
+</ol>
+<h2 id="一-绑定自助系统"><a href="#一-绑定自助系统" class="headerlink" title="一.绑定自助系统"></a>一.绑定自助系统</h2><ol>
+<li>插上网线，使用浏览器打开任意网页，会自动跳转到通知页面：</li>
+</ol>
+<p><img src="https://i.loli.net/2020/09/13/h3rTtnN6OGImQ8H.png" alt="image.png"></p>
+<ol start="2">
+<li><p>点右侧的用户自助服务系统，打开校园网自助系统</p>
+</li>
+<li><p>在登录页面输入学号和对应的校园网密码（默认学号后6位），登录成功在服务，绑定运营商账号密码</p>
+</li>
+<li><p>在通知页面下载上网客户端</p>
+</li>
+<li><p>在客户端使用学号和一卡通充值密码登录（默认为学号后6位），如果有网证明绑定成功</p>
+</li>
+</ol>
+]]></content>
+  </entry>
 </search>
