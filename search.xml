@@ -467,4 +467,25 @@
         <category>go</category>
       </categories>
   </entry>
+  <entry>
+    <title>Golang变量</title>
+    <url>/2020/09/12/Golang%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>盛最多的水</title>
+    <url>/2020/09/13/%E7%9B%9B%E6%9C%80%E5%A4%9A%E7%9A%84%E6%B0%B4/</url>
+    <content><![CDATA[<h1 id="盛最多的水"><a href="#盛最多的水" class="headerlink" title="盛最多的水"></a>盛最多的水</h1><p>给你 n 个非负整数 a1，a2，…，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。</p>
+<p>说明：你不能倾斜容器，且 n 的值至少为 2。</p>
+<p><img src="D:%5Cblog%5Czhaobuqi-01.github.io%5Csource%5Cimages%5C%E7%9B%9B%E6%9C%80%E5%A4%9A%E7%9A%84%E6%B0%B4.png" alt=""></p>
+<p>图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入：[1,8,6,2,5,4,8,3,7]<br>输出：49</p>
+</blockquote>
+<p>代码</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">maxArea</span><span class="params">(<span class="keyword">int</span>* <span class="built_in">height</span>, <span class="keyword">int</span> heightSize)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> head=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> last=heightSize<span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">int</span> maxArea=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> tempArea=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(head&lt;last)&#123;</span><br><span class="line">        tempArea=<span class="built_in">min</span>(<span class="built_in">height</span>[head],<span class="built_in">height</span>[last])*(last-head);</span><br><span class="line">        maxArea=<span class="built_in">max</span>(tempArea,maxArea);</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">height</span>[last]&gt;=<span class="built_in">height</span>[head])&#123;</span><br><span class="line">            head++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            last--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> maxArea;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">min</span><span class="params">(<span class="keyword">int</span> head,<span class="keyword">int</span> last)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(head&gt;=last)</span><br><span class="line">        <span class="keyword">return</span> last;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">&#125;<span class="function"><span class="keyword">int</span> <span class="title">max</span><span class="params">(<span class="keyword">int</span> head,<span class="keyword">int</span> last)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(head&gt;=last)</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> last;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
 </search>
