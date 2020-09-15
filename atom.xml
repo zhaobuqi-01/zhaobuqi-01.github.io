@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2020-09-13T13:47:20.564Z</updated>
+  <updated>2020-09-15T12:38:10.815Z</updated>
   <id>https://zhaobuqi-01.github.io/</id>
   
   <author>
@@ -15,6 +15,128 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Go变量</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/15/Go%E5%8F%98%E9%87%8F-1/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/15/Go%E5%8F%98%E9%87%8F-1/</id>
+    <published>2020-09-15T12:38:10.000Z</published>
+    <updated>2020-09-15T12:38:10.815Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Go声明</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/15/Go%E5%A3%B0%E6%98%8E/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/15/Go%E5%A3%B0%E6%98%8E/</id>
+    <published>2020-09-15T12:32:17.000Z</published>
+    <updated>2020-09-15T12:38:13.856Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;2-2声明&quot;&gt;&lt;a href=&quot;#2-2声明&quot; class=&quot;headerlink&quot; title=&quot;2.2声明&quot;&gt;&lt;/a&gt;2.2声明&lt;/h1&gt;&lt;p&gt;  &lt;strong&gt;声明语句定义了程序的各种实体对象以及部分或全部的属性&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;Go语言
+      
+    
+    </summary>
+    
+    
+      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Go语法规范</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/15/Go%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/15/Go%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/</id>
+    <published>2020-09-15T12:12:33.000Z</published>
+    <updated>2020-09-15T12:31:23.674Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;注意事项&quot;&gt;&lt;a href=&quot;#注意事项&quot; class=&quot;headerlink&quot; title=&quot;注意事项&quot;&gt;&lt;/a&gt;注意事项&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;必须告诉编译器源文件需要哪些包。&lt;/li&gt;
+&lt;li&gt;必须恰当导入需要的包，缺少了必要的包或者导入了不需要的包，程
+      
+    
+    </summary>
+    
+    
+      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Go命名</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/15/Go%E5%91%BD%E5%90%8D/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/15/Go%E5%91%BD%E5%90%8D/</id>
+    <published>2020-09-15T11:45:54.000Z</published>
+    <updated>2020-09-15T12:32:01.635Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;2-1命名&quot;&gt;&lt;a href=&quot;#2-1命名&quot; class=&quot;headerlink&quot; title=&quot;2.1命名&quot;&gt;&lt;/a&gt;2.1命名&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;命名规则：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一个名字必须以一个字母（Unicode字母）或下划线开头
+      
+    
+    </summary>
+    
+    
+      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ubutun修改root用户密码</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/15/ubutun%E4%BF%AE%E6%94%B9root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/15/ubutun%E4%BF%AE%E6%94%B9root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/</id>
+    <published>2020-09-15T11:19:25.000Z</published>
+    <updated>2020-09-15T11:39:57.544Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+      
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Go变量</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/14/Go%E5%8F%98%E9%87%8F/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/14/Go%E5%8F%98%E9%87%8F/</id>
+    <published>2020-09-14T11:45:58.000Z</published>
+    <updated>2020-09-14T11:45:58.600Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>修改路由器wife账号密码</title>
@@ -340,125 +462,6 @@
     
     
       <category term="ssh" scheme="https://zhaobuqi-01.github.io/tags/ssh/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu安装百度输入法</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/02/ubuntu%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E8%BE%93%E5%85%A5%E6%B3%95/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/02/ubuntu%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E8%BE%93%E5%85%A5%E6%B3%95/</id>
-    <published>2020-06-02T13:44:05.000Z</published>
-    <updated>2020-06-12T12:37:24.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;解决依赖&quot;&gt;&lt;a href=&quot;#解决依赖&quot; class=&quot;headerlink&quot; title=&quot;解决依赖&quot;&gt;&lt;/a&gt;解决依赖&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>git学习</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/01/git%E5%AD%A6%E4%B9%A0/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/01/git%E5%AD%A6%E4%B9%A0/</id>
-    <published>2020-06-01T14:22:37.000Z</published>
-    <updated>2020-06-12T12:37:24.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;初始化设置&quot;&gt;&lt;a href=&quot;#初始化设置&quot; class=&quot;headerlink&quot; title=&quot;初始化设置&quot;&gt;&lt;/a&gt;初始化设置&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;
-      
-    
-    </summary>
-    
-    
-      <category term="git" scheme="https://zhaobuqi-01.github.io/categories/git/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu安装typora</title>
-    <link href="https://zhaobuqi-01.github.io/2020/05/31/ubuntu%E5%AE%89%E8%A3%85typora/"/>
-    <id>https://zhaobuqi-01.github.io/2020/05/31/ubuntu%E5%AE%89%E8%A3%85typora/</id>
-    <published>2020-05-31T14:41:12.000Z</published>
-    <updated>2020-06-12T12:37:24.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
-      
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
-    
-    
-      <category term="typora" scheme="https://zhaobuqi-01.github.io/tags/typora/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>本地分支推送到远程分支</title>
-    <link href="https://zhaobuqi-01.github.io/2020/05/28/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/"/>
-    <id>https://zhaobuqi-01.github.io/2020/05/28/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/</id>
-    <published>2020-05-28T15:53:49.000Z</published>
-    <updated>2020-06-12T12:37:24.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;1-有远程分支remote-branch-有本地分支local-branch-本地分支与远程分支关联-已经切换到本地分支&quot;&gt;&lt;a href=&quot;#1-有远程分支remote-branch-有本地分支local-branch-本地分支与远程分支关联-已经切换到本地分支
-      
-    
-    </summary>
-    
-    
-      <category term="git" scheme="https://zhaobuqi-01.github.io/categories/git/"/>
-    
-    
-      <category term="git push" scheme="https://zhaobuqi-01.github.io/tags/git-push/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在ubutun20.04下搭建hexo环境</title>
-    <link href="https://zhaobuqi-01.github.io/2020/05/28/ubuntu%E6%90%AD%E5%BB%BAhexo/"/>
-    <id>https://zhaobuqi-01.github.io/2020/05/28/ubuntu%E6%90%AD%E5%BB%BAhexo/</id>
-    <published>2020-05-28T13:36:59.000Z</published>
-    <updated>2020-06-12T12:37:24.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;安装nodejs&quot;&gt;&lt;a href=&quot;#安装nodejs&quot; class=&quot;headerlink&quot; title=&quot;安装nodejs&quot;&gt;&lt;/a&gt;安装nodejs&lt;/h2&gt;&lt;p&gt;&lt;code&gt;sudo apt install nodejs&lt;/code&gt;&lt;/p&gt;
-&lt;h2 i
-      
-    
-    </summary>
-    
-    
-      <category term="hexo的使用" scheme="https://zhaobuqi-01.github.io/categories/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="hexo" scheme="https://zhaobuqi-01.github.io/tags/hexo/"/>
-    
-      <category term="npm" scheme="https://zhaobuqi-01.github.io/tags/npm/"/>
-    
-      <category term="nodejs" scheme="https://zhaobuqi-01.github.io/tags/nodejs/"/>
     
   </entry>
   

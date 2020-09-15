@@ -497,4 +497,89 @@
 </ol>
 ]]></content>
   </entry>
+  <entry>
+    <title>Go变量</title>
+    <url>/2020/09/15/Go%E5%8F%98%E9%87%8F-1/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Go变量</title>
+    <url>/2020/09/14/Go%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Go命名</title>
+    <url>/2020/09/15/Go%E5%91%BD%E5%90%8D/</url>
+    <content><![CDATA[<h1 id="2-1命名"><a href="#2-1命名" class="headerlink" title="2.1命名"></a>2.1命名</h1><p><strong>命名规则：</strong></p>
+<p>一个名字必须以一个字母（Unicode字母）或下划线开头，后面可以跟任意数量的字母、数字或下划线。</p>
+<p><strong>注意事项：</strong> </p>
+<ol>
+<li><p>大写字母和小写字母是不同的：heapSort和Heapsort是两个不同的名字</p>
+</li>
+<li><p>关键字不能用于自定义名字，只能在特定语法结构中使用。</p>
+</li>
+</ol>
+<p><strong>关键字</strong> </p>
+<blockquote>
+<p>break        default         func         interface         select<br>case          defer             go              map                struct<br>chan         else                 goto         package         switch<br>const         fallthrough     if             range             type<br>continue     for                 import     return          var</p>
+</blockquote>
+<p><strong>预定义的名字</strong> ，主要对应内建的常量，类型和函数</p>
+<p>这些预定义的名字并不是关键字，你可以在定义中重新使用它们。在一些特殊的场景中重新定义它们也是有意义的，但是也要注意避免过度而引起语义混乱。</p>
+<blockquote>
+<p>内建常量:     true     false     iota     nil<br>内建类型: int     int8     int16     int32     int64<br>               uint     uint8 uint16     uint32 uint64     uintptr<br>               float32     float64     complex128     complex64<br>               bool     byte     rune     string     error<br>内建函数:     make     len     cap     new     append     copy     close     delete<br>                   complex     real     imag<br>                   panic     recover</p>
+</blockquote>
+<ol start="3">
+<li><p>如果它的就一个名字在函数内部定义，那么它的就只在函数内部有效。如果在函数外部定义，那么将在当前包的所有文件中都可以访问。</p>
+</li>
+<li><p><strong>名字的开头字母的大小写决定了名字在包外的可见性。包本身的名字一般总是用消息字母</strong> 如果一个名字是大写字母开头的(注：必须是在函数外部定义的包级名字；包级函数名本身也是包级名字)，那么他将是导出的，也就是可以被外部的包访问，<strong>例如 fmt 包的Printf就是导出的，可以在fmt包外部访问</strong> </p>
+</li>
+<li><p><strong>名字的长度没有逻辑限制</strong> ，但是Go语言的风格是尽量使用短小的名字，对于局部变量尤其是<br>这样；你会经常看到i之类的短名字，而不是冗长的theLoopIndex命名。通常来说，如果一个<br>名字的作用域比较大，生命周期也比较长，那么用长的名字将会更有意义。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Go语法规范</title>
+    <url>/2020/09/15/Go%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ul>
+<li>必须告诉编译器源文件需要哪些包。</li>
+<li>必须恰当导入需要的包，缺少了必要的包或者导入了不需要的包，程序都无法编译通过。</li>
+<li><code>import</code> 声明必须跟在文件的<code>package</code> 声明之后。随后，则是组成程序的函数，变量，常量，类型的声明语句（分别由<code>func</code>,<code>var</code>,<code>const</code>,<code>type</code>定义）。这些内容的声明顺序并不重要。</li>
+<li>Go语言不需要在语句或声明的末尾添加分号。</li>
+<li>函数的左括号 <code>{</code> 必须和 <code>func</code>  函数声明在同一行上,且位于末尾，不能独占一行。</li>
+</ul>
+<h1 id="Go的注释"><a href="#Go的注释" class="headerlink" title="Go的注释"></a>Go的注释</h1><p><strong>行注释：</strong> // 【Go语言规范尽量使用行注释而不是块注释】</p>
+<p><strong>块注释:</strong>  </p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 注释内容*/</span></span><br><span class="line">在<span class="comment">/* */</span>不能再添加<span class="comment">/**/</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>ubutun修改root用户密码</title>
+    <url>/2020/09/15/ubutun%E4%BF%AE%E6%94%B9root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">zhaobuqi@zhaobuqi:~$ sudo passwd </span><br><span class="line">新的 密码： </span><br><span class="line">重新输入新的 密码： </span><br><span class="line">passwd：已成功更新密码</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Go声明</title>
+    <url>/2020/09/15/Go%E5%A3%B0%E6%98%8E/</url>
+    <content><![CDATA[<h1 id="2-2声明"><a href="#2-2声明" class="headerlink" title="2.2声明"></a>2.2声明</h1><p>  <strong>声明语句定义了程序的各种实体对象以及部分或全部的属性</strong> </p>
+<p>Go语言主要有四种类型的声明语句：<strong>var</strong> ，<strong>const</strong> ，<strong>type</strong> 和<strong>func</strong> ，分别对应变量，常量，类型和函数实体对象的声明。</p>
+<p>一个Go语言编写的程序对应一个或多个以.go为文件后缀名的源文件中。每个源文件以包的声<br>明语句开始，说明该源文件是属于哪个包。包声明语句之后是import语句导入依赖的其它包，<br>然后是包一级的类型、变量、常量、函数的声明语句，包一级的各种类型的声明语句的顺序<br>无关紧要（译注：函数内部的名字则必须先声明之后才能使用）。</p>
+<p><strong>一个函数的声明由一个函数名字、参数列表（由函数的调用者提供参数变量的具体值）、一<br>个可选的返回值列表和包含函数定义的函数体组成。</strong> 如果函数没有返回值，那么返回值列表<br>是省略的。执行函数从函数的第一个语句开始，依次顺序执行直到遇到return返回语句，如果<br>没有返回语句则是执行到函数末尾，然后返回到函数调用者。</p>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
 </search>
