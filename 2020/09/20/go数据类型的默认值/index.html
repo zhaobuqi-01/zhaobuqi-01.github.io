@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="赵不器">
 <meta property="og:description" content="go语言的数据类型的零值12345678910package mainimport &quot;fmt&quot;func main()&amp;#123;	var a int	var b float32	var c float64	var is bool	var name string	fmt.Printf(&quot;a&#x3D;%d,b&#x3D;%d,c&#x3D;%d,is&#x3D;%v,name&#x3D;%v&quot;,a,b,c,is,name)&amp;#125;     数据">
 <meta property="article:published_time" content="2020-09-20T13:39:59.000Z">
-<meta property="article:modified_time" content="2020-09-21T11:59:38.708Z">
+<meta property="article:modified_time" content="2020-09-21T12:11:37.329Z">
 <meta property="article:author" content="赵不器">
 <meta name="twitter:card" content="summary">
 
@@ -408,22 +408,28 @@
 </tr>
 <tr>
 <td>浮点型</td>
-<td></td>
+<td>0</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td>字符串</td>
+<td>空串</td>
+</tr>
+<tr>
+<td>指针</td>
+<td>nil</td>
 </tr>
 </tbody></table>
 <h1 id="go语言数据类型转化"><a href="#go语言数据类型转化" class="headerlink" title="go语言数据类型转化"></a>go语言数据类型转化</h1><p>go语言没有自动转化，需要显性转化</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span> fmt</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> i <span class="keyword">int</span> = <span class="number">100</span></span><br><span class="line">    <span class="comment">//i-&gt;float32</span></span><br><span class="line">    <span class="keyword">var</span> n1 <span class="keyword">float32</span> = <span class="keyword">float32</span>(i)</span><br><span class="line">    <span class="keyword">var</span> n2 <span class="keyword">int64</span> = <span class="keyword">int64</span>(i)</span><br><span class="line">    fmt.printf(<span class="string">"i=%d,n1=%v"</span>,i,n1)<span class="comment">//%v使用默认格式输出</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1 id="go-数据类型转化的细节"><a href="#go-数据类型转化的细节" class="headerlink" title="go 数据类型转化的细节"></a>go 数据类型转化的细节</h1><ul>
-<li><p>被转化的是变量存储的数据（即值），变量本身是没有转变的</p>
-</li>
-<li><p>如果转化的数据由大到小可能会发生数据溢出，如int64强制转化为int8，编译不会报错，但是数据会发生数据溢出，按二进制进行溢出</p>
-</li>
+<li>被转化的是变量存储的数据（即值），变量本身是没有转变的</li>
+<li>如果转化的数据由大到小可能会发生数据溢出，如int64强制转化为int8，编译不会报错，但是数据会发生数据溢出，按二进制进行溢出</li>
 </ul>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> n1 <span class="keyword">int32</span> = <span class="number">12</span></span><br><span class="line"><span class="keyword">var</span> n2 <span class="keyword">int64</span> </span><br><span class="line"><span class="keyword">var</span> n3 <span class="keyword">int</span> <span class="number">8</span></span><br><span class="line">n2 = n1 + <span class="number">20</span>  <span class="comment">//int32--&gt;int 64</span></span><br><span class="line">n2 = <span class="keyword">int64</span>(n1) + <span class="number">20</span> <span class="comment">//正确</span></span><br><span class="line">n2 = <span class="keyword">int8</span>(n1) +<span class="number">127</span> <span class="comment">//编译通过，但是数据溢出</span></span><br><span class="line">n2 = <span class="keyword">int8</span>(n1) + <span class="number">128</span><span class="comment">//编译不通过，128超出int8的范围</span></span><br></pre></td></tr></table></figure>
+
+
+
 
       
     </div>
@@ -477,7 +483,7 @@
  <p><span>本文标题:</span><a href="/2020/09/20/go%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC/">go数据类型的默认值及转换</a></p>
  <p><span>文章作者:</span><a href="/" title="访问 赵不器 的个人博客">赵不器</a></p>
  <p><span>发布时间:</span>2020年09月20日 - 21:39</p>
- <p><span>最后更新:</span>2020年09月21日 - 19:59</p>
+ <p><span>最后更新:</span>2020年09月21日 - 20:11</p>
  <p><span>原始链接:</span><a href="/2020/09/20/go%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC/" title="go数据类型的默认值及转换">https://zhaobuqi-01.github.io/2020/09/20/go%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://zhaobuqi-01.github.io/2020/09/20/go%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC/"  aria-label="复制成功！"></i></span>
  </p>
