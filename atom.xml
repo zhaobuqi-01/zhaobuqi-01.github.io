@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2020-09-20T11:27:03.208Z</updated>
+  <updated>2020-09-21T11:59:38.708Z</updated>
   <id>https://zhaobuqi-01.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>go数据类型的默认值及转换</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/20/go%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/20/go%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC/</id>
+    <published>2020-09-20T13:39:59.000Z</published>
+    <updated>2020-09-21T11:59:38.708Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;go语言的数据类型的零值&quot;&gt;&lt;a href=&quot;#go语言的数据类型的零值&quot; class=&quot;headerlink&quot; title=&quot;go语言的数据类型的零值&quot;&gt;&lt;/a&gt;go语言的数据类型的零值&lt;/h1&gt;&lt;figure class=&quot;highlight go&quot;&gt;&lt;tab
+      
+    
+    </summary>
+    
+    
+      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>字符串类型</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/20/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/20/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/</id>
+    <published>2020-09-20T13:14:04.000Z</published>
+    <updated>2020-09-20T13:39:37.703Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;字符串的基本使用&quot;&gt;&lt;a href=&quot;#字符串的基本使用&quot; class=&quot;headerlink&quot; title=&quot;字符串的基本使用&quot;&gt;&lt;/a&gt;字符串的基本使用&lt;/h1&gt;&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class
+      
+    
+    </summary>
+    
+    
+      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>无重复字符的最长字符</title>
@@ -282,7 +326,7 @@
     <link href="https://zhaobuqi-01.github.io/2020/09/07/git%E5%AD%A6%E4%B9%A02/"/>
     <id>https://zhaobuqi-01.github.io/2020/09/07/git%E5%AD%A6%E4%B9%A02/</id>
     <published>2020-09-07T13:23:24.000Z</published>
-    <updated>2020-09-07T13:45:58.828Z</updated>
+    <updated>2020-09-20T12:53:37.711Z</updated>
     
     <summary type="html">
     
@@ -405,57 +449,6 @@
       
       
         &lt;h1 id=&quot;ls与pwd&quot;&gt;&lt;a href=&quot;#ls与pwd&quot; class=&quot;headerlink&quot; title=&quot;ls与pwd&quot;&gt;&lt;/a&gt;ls与pwd&lt;/h1&gt;&lt;h2 id=&quot;pwd&quot;&gt;&lt;a href=&quot;#pwd&quot; class=&quot;headerlink&quot; title=&quot;pwd
-      
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>linux_帮助命令</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/03/linux-%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/03/linux-%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4/</id>
-    <published>2020-06-03T07:25:45.000Z</published>
-    <updated>2020-06-12T12:37:24.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;帮助命令&quot;&gt;&lt;a href=&quot;#帮助命令&quot; class=&quot;headerlink&quot; title=&quot;帮助命令&quot;&gt;&lt;/a&gt;帮助命令&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;man&lt;/li&gt;
-&lt;li&gt;help&lt;/li&gt;
-&lt;li&gt;info&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;命令用法演示&lt;/p&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>linux_目录</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/03/linux-%E7%9B%AE%E5%BD%95/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/03/linux-%E7%9B%AE%E5%BD%95/</id>
-    <published>2020-06-03T07:18:48.000Z</published>
-    <updated>2020-06-12T12:37:24.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;常见目录&quot;&gt;&lt;a href=&quot;#常见目录&quot; class=&quot;headerlink&quot; title=&quot;常见目录&quot;&gt;&lt;/a&gt;常见目录&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;/  &lt;strong&gt;根目录&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;/root  &lt;strong&gt;root的家目录
       
     
     </summary>
