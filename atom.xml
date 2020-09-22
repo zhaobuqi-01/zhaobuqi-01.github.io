@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2020-09-21T12:11:37.329Z</updated>
+  <updated>2020-09-21T12:55:50.383Z</updated>
   <id>https://zhaobuqi-01.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>go基本数据类型转string</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/21/go%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%ACstring/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/21/go%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%ACstring/</id>
+    <published>2020-09-21T12:12:58.000Z</published>
+    <updated>2020-09-21T12:55:50.383Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Go基本数据类型转string&quot;&gt;&lt;a href=&quot;#Go基本数据类型转string&quot; class=&quot;headerlink&quot; title=&quot;Go基本数据类型转string&quot;&gt;&lt;/a&gt;Go基本数据类型转string&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;fmt.Sprintf(
+      
+    
+    </summary>
+    
+    
+      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>go数据类型的默认值及转换</title>
@@ -40,8 +63,8 @@
   
   <entry>
     <title>字符串类型</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/20/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/20/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/</id>
+    <link href="https://zhaobuqi-01.github.io/2020/09/20/Go%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/20/Go%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/</id>
     <published>2020-09-20T13:14:04.000Z</published>
     <updated>2020-09-20T13:39:37.703Z</updated>
     
@@ -427,28 +450,6 @@
       
       
         &lt;h1 id=&quot;打包与解压缩&quot;&gt;&lt;a href=&quot;#打包与解压缩&quot; class=&quot;headerlink&quot; title=&quot;打包与解压缩&quot;&gt;&lt;/a&gt;打包与解压缩&lt;/h1&gt;&lt;h2 id=&quot;打包&quot;&gt;&lt;a href=&quot;#打包&quot; class=&quot;headerlink&quot; title=&quot;打包&quot;&gt;&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>linux_ls</title>
-    <link href="https://zhaobuqi-01.github.io/2020/06/03/linux-ls/"/>
-    <id>https://zhaobuqi-01.github.io/2020/06/03/linux-ls/</id>
-    <published>2020-06-03T08:15:49.000Z</published>
-    <updated>2020-06-12T12:37:24.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;ls与pwd&quot;&gt;&lt;a href=&quot;#ls与pwd&quot; class=&quot;headerlink&quot; title=&quot;ls与pwd&quot;&gt;&lt;/a&gt;ls与pwd&lt;/h1&gt;&lt;h2 id=&quot;pwd&quot;&gt;&lt;a href=&quot;#pwd&quot; class=&quot;headerlink&quot; title=&quot;pwd
       
     
     </summary>

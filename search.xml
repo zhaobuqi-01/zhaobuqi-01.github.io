@@ -653,7 +653,7 @@
   </entry>
   <entry>
     <title>字符串类型</title>
-    <url>/2020/09/20/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/</url>
+    <url>/2020/09/20/Go%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<h1 id="字符串的基本使用"><a href="#字符串的基本使用" class="headerlink" title="字符串的基本使用"></a>字符串的基本使用</h1><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">var</span> address <span class="keyword">string</span> = <span class="string">"中国"</span></span><br><span class="line">	fmt.Println(address)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
@@ -674,6 +674,25 @@
 
 
 
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>go基本数据类型转string</title>
+    <url>/2020/09/21/go%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%ACstring/</url>
+    <content><![CDATA[<h1 id="Go基本数据类型转string"><a href="#Go基本数据类型转string" class="headerlink" title="Go基本数据类型转string"></a>Go基本数据类型转string</h1><ol>
+<li>fmt.Sprintf()</li>
+<li>strconv包函数 </li>
+</ol>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line">str = strconv.FormatInt(<span class="keyword">int64</span>(num3),<span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>strconv.Itoa()</li>
+</ol>
+<h1 id="string转其他数据类型"><a href="#string转其他数据类型" class="headerlink" title="string转其他数据类型"></a>string转其他数据类型</h1><p>strconv.ParseInt(   )</p>
+<p>strconv.ParseBool(    )</p>
 ]]></content>
       <categories>
         <category>go</category>
