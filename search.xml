@@ -786,4 +786,283 @@
         <category>go</category>
       </categories>
   </entry>
+  <entry>
+    <title>Python--循环结构</title>
+    <url>/2020/09/28/Python-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h1 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h1><h2 id="while语句"><a href="#while语句" class="headerlink" title="while语句"></a>while语句</h2><p><strong>1.while语句的一般形式:</strong> </p>
+<p>while 条件表达式:</p>
+<p>​    循环体</p>
+<blockquote>
+<p><strong>注意事项</strong> </p>
+<ol>
+<li>当循环体由多条语句构成时，必须用缩进对齐的方式组成一个语句块来分隔子句，否则会产生错误。</li>
+<li>与if语句的语法类似，如果while循环体中中一条语句，可以将该语句与while写在同一行中。</li>
+<li>while语句的条件表达式不需要用括号括起来，表达式后面必须有冒号。</li>
+<li>如果表达式永远为真，循环将会无限的执行下去。在循环体内必须有修改表达式值的语句，使其值趋向Flase,让循环趋于结束，避免死循环。</li>
+</ol>
+</blockquote>
+<p><strong>2.在while语句中使用else</strong></p>
+<p>while 条件表达式:</p>
+<p>​    循环体</p>
+<p>else :</p>
+<p>​    语句</p>
+<p>else中语句会在循环正常执行完的情况下执行（不管是否执行循环体 ）。</p>
+<h2 id="for-语句"><a href="#for-语句" class="headerlink" title="for 语句"></a>for 语句</h2><p>for语句的一般格式:</p>
+<p>for 目标变量 in 序列对象 :</p>
+<p>​    循环体</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>韩信点兵-Python</title>
+    <url>/2020/09/28/%E9%9F%A9%E4%BF%A1%E7%82%B9%E5%85%B5-Python/</url>
+    <content><![CDATA[<h1 id="7-2-jmu-python-韩信点兵-10分"><a href="#7-2-jmu-python-韩信点兵-10分" class="headerlink" title="7-2 jmu-python-韩信点兵 (10分)"></a>7-2 jmu-python-韩信点兵 (10分)</h1><p>在中国数学史上，广泛流传着一个“韩信点兵”的故事：韩信是汉高祖刘邦手下的大将，他英勇善战，智谋超群，为汉朝建立了卓越的功劳。据说韩信的数学水平也非常高超，他在点兵的时候，为了知道有多少兵，同时又能保住军事机密，便让士兵排队报数：</p>
+<p>按从1至5报数，记下最末一个士兵报的数为1； 再按从1至6报数，记下最末一个士兵报的数为5； 再按从1至7报数，记下最末一个士兵报的数为4； 最后按从1至11报数，最末一个士兵报的数为10； 请编写程序计算韩信至少有多少兵。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>无输入</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>输出韩信至少拥有的士兵人数。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">无输入</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输出人数</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">10000</span>):</span><br><span class="line">    <span class="keyword">if</span> (i % <span class="number">5</span> == <span class="number">1</span>) <span class="keyword">and</span> (i % <span class="number">6</span> == <span class="number">5</span>) <span class="keyword">and</span> (i % <span class="number">7</span> == <span class="number">4</span>) <span class="keyword">and</span> (i % <span class="number">11</span> == <span class="number">10</span>):</span><br><span class="line">        print(i)</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>函数细节理解：</p>
+<p><strong>range()</strong> </p>
+<p>range()内建函数的一般格式为：</p>
+<p><strong><em>range([start,]stop[,step])</em></strong> </p>
+<p>range()函数有三个参数：start和step是可选的，start表示开始，默认值为0；end表示结束；step表示每次跳跃的间距，默认值为1。函数功能是生成一个从start参数的值开始，到end参数的值结束（但不包括end）的数字序列。</p>
+<p>*<em>示例: *</em></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">10</span>):</span><br><span class="line">   print(i)</span><br></pre></td></tr></table></figure>
+
+<p><strong>输出：</strong> </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;0</span><br><span class="line">&gt;1</span><br><span class="line">&gt;2</span><br><span class="line">&gt;3</span><br><span class="line">&gt;4</span><br><span class="line">&gt;5</span><br><span class="line">&gt;6</span><br><span class="line">&gt;7</span><br><span class="line">&gt;8</span><br><span class="line">&gt;9</span><br></pre></td></tr></table></figure>
+
+<p><strong>print()</strong> </p>
+<p><strong>print()</strong> 方法用于打印输出，是python中最常见的一个函数。</p>
+<p>该函数的语法如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;print(*objects, sep=<span class="string">' '</span>, end=<span class="string">'\n'</span>, file=sys.stdout)</span><br></pre></td></tr></table></figure>
+
+<p>参数的具体含义如下：</p>
+<p>objects –表示输出的对象。输出多个对象时，需要用 , （逗号）分隔。</p>
+<p>sep – 用来间隔多个对象。</p>
+<p>end – 用来设定以什么结尾。默认值是换行符 \n，我们可以换成其他字符。</p>
+<p>file – 要写入的文件对象。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;print(<span class="number">1</span>)  <span class="comment">#数值类型可以直接输出</span></span><br><span class="line"></span><br><span class="line">&gt;<span class="string">'''</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;运行结果如下</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;1</span></span><br><span class="line"><span class="string">&gt;'''</span></span><br><span class="line">&gt;print(<span class="string">"Hello World"</span>)  <span class="comment">#字符串类型可以直接输出</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt;<span class="string">'''</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;运行结果如下：</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;Hello World</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;'''</span></span><br><span class="line">&gt;a=<span class="number">1</span></span><br><span class="line"></span><br><span class="line">&gt;b=<span class="string">"Hello World"</span></span><br><span class="line"></span><br><span class="line">&gt;print(a, b)  <span class="comment">#可以一次输出多个对象，对象之间用逗号分隔</span></span><br><span class="line"></span><br><span class="line">&gt;<span class="string">'''</span></span><br><span class="line"><span class="string">&gt;运行结果如下：</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;1 Hello World</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;'''</span></span><br><span class="line">&gt;<span class="comment">#如果直接输出字符串，而不是用对象表示的话，可以不使用逗号</span></span><br><span class="line"></span><br><span class="line">&gt;print(<span class="string">"Duan"</span><span class="string">"Yixuan"</span>)</span><br><span class="line"></span><br><span class="line">&gt;print(<span class="string">"Duan"</span>,<span class="string">"Yixuan"</span>)</span><br><span class="line"></span><br><span class="line">&gt;<span class="string">'''</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;运行结果如下：</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;DuanYixuan</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;Duan Yixuan</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;可知，不添加逗号分隔符，字符串之间没有间隔</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;'''</span><span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&gt;print("www", "snh48", "com", sep=".")  # 设置间隔符</span></span><br><span class="line"><span class="string">&gt;'</span><span class="string">''</span></span><br><span class="line">&gt;运行结果如下：</span><br><span class="line">&gt;www.snh48.com</span><br><span class="line"></span><br><span class="line">&gt;<span class="string">'''</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="二、变量的输出"><a href="#二、变量的输出" class="headerlink" title="二、变量的输出"></a>二、变量的输出</h1><p>无论什么类型的数据，包括但不局限于：数值型，布尔型，列表变量，字典变量…都可以直接输出。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;<span class="comment">#例如：</span></span><br><span class="line">&gt;num = <span class="number">19</span></span><br><span class="line"></span><br><span class="line">&gt;print(num)    <span class="comment">#19  输出数值型变量</span></span><br><span class="line"></span><br><span class="line">&gt;str = <span class="string">'Duan Yixuan'</span></span><br><span class="line"></span><br><span class="line">&gt;print(str)  <span class="comment">#Duan Yixuan  输出字符串变量</span></span><br><span class="line"></span><br><span class="line">&gt;list = [<span class="number">1</span>,<span class="number">2</span>,<span class="string">'a'</span>]</span><br><span class="line"></span><br><span class="line">&gt;print(list)   <span class="comment">#[1, 2, 'a']  输出列表变量</span></span><br><span class="line"></span><br><span class="line">&gt;tuple = (<span class="number">1</span>,<span class="number">2</span>,<span class="string">'a'</span>)</span><br><span class="line"></span><br><span class="line">&gt;print(tuple)    <span class="comment">#(1, 2, 'a') 输出元组变量</span></span><br><span class="line"></span><br><span class="line">&gt;dict = &#123;<span class="string">'a'</span>:<span class="number">1</span>, <span class="string">'b'</span>:<span class="number">2</span>&#125;</span><br><span class="line"></span><br><span class="line">&gt;print(dict)   <span class="comment"># &#123;'a': 1, 'b': 2&#125; 输出字典变量</span></span><br></pre></td></tr></table></figure></blockquote>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>jmu-python-偶数之积</title>
+    <url>/2020/09/28/jmu-python-%E5%81%B6%E6%95%B0%E4%B9%8B%E7%A7%AF/</url>
+    <content><![CDATA[<h1 id="7-4-jmu-python-偶数之积-10分"><a href="#7-4-jmu-python-偶数之积-10分" class="headerlink" title="7-4 jmu-python-偶数之积 (10分)"></a>7-4 jmu-python-偶数之积 (10分)</h1><p>求1到n中所有偶数的积。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入整数n。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>1到n中偶数积。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">8</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = int(input())</span><br><span class="line">sum = <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,n+<span class="number">1</span>) :</span><br><span class="line">    <span class="keyword">if</span> i%<span class="number">2</span> ==<span class="number">0</span> :</span><br><span class="line">        sum=i*sum</span><br><span class="line">    i+=<span class="number">1</span></span><br><span class="line">print(sum)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>jmu-python-分段函数</title>
+    <url>/2020/09/28/jmu-python-%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<h1 id="7-3-jmu-python-分段函数-10分"><a href="#7-3-jmu-python-分段函数-10分" class="headerlink" title="7-3 jmu-python-分段函数 (10分)"></a>7-3 jmu-python-分段函数 (10分)</h1><p>本题目要求计算下列分段函数f(x)的值（x为从键盘输入的一个任意实数）：</p>
+<p><img src="https://images.ptausercontent.com/625099ce-3e8d-4a2f-a719-99929e1e027e.jpg" alt="分段函数.jpg"></p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入在一行中给出实数 x。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>在一行中按“f(x)=result”的格式输出，其中<strong>x与result都保留两位小数</strong>。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0.76</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">f(0.76)&#x3D;1.20</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = eval(input())</span><br><span class="line"><span class="keyword">if</span> x&lt;<span class="number">3</span> :</span><br><span class="line">    print(<span class="string">"f(%.2f)=%.2f"</span> %(x,<span class="number">1.2</span>))</span><br><span class="line"><span class="keyword">elif</span> x==<span class="number">3</span> :</span><br><span class="line">    print(<span class="string">"f(%.2f)=%.2f"</span> %(x,<span class="number">10</span>))</span><br><span class="line"><span class="keyword">elif</span> x&gt;<span class="number">3</span> :</span><br><span class="line">    num = <span class="number">2</span>*x + <span class="number">1</span></span><br><span class="line">    print(<span class="string">"f(%.2f)=%.2f"</span> %(x,num))</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>jmu-python-判断闰年</title>
+    <url>/2020/09/28/jmu-python-%E5%88%A4%E6%96%AD%E9%97%B0%E5%B9%B4/</url>
+    <content><![CDATA[<h3 id="7-5-jmu-python-判断闰年-10分"><a href="#7-5-jmu-python-判断闰年-10分" class="headerlink" title="7-5 jmu-python-判断闰年 (10分)"></a>7-5 jmu-python-判断闰年 (10分)</h3><p>输入一个年份，判断其是否为闰年。</p>
+<p>判断闰年的标准：能被4整除但不能被100整除，或者能被400整除的年份是闰年。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>直接输入一个4位数年份，没有其它任何附加字符。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>输出<code>year是闰年</code> 或者<code>year不是闰年</code></p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1900</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1900不是闰年</span><br></pre></td></tr></table></figure>
+
+<h3 id="输入样例-1"><a href="#输入样例-1" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1904</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例-1"><a href="#输出样例-1" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1904是闰年</span><br></pre></td></tr></table></figure>
+
+<h3 id="输入样例-2"><a href="#输入样例-2" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2000</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例-2"><a href="#输出样例-2" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2000是闰年</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a =int(input())</span><br><span class="line"><span class="keyword">if</span> (a%<span class="number">4</span>==<span class="number">0</span> <span class="keyword">and</span> a%<span class="number">100</span>!=<span class="number">0</span>) <span class="keyword">or</span> a%<span class="number">400</span>==<span class="number">0</span>:</span><br><span class="line">    print(<span class="string">f'<span class="subst">&#123;a&#125;</span>是闰年'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">f'<span class="subst">&#123;a&#125;</span>不是闰年'</span>)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>jmu-python-凯撒密码加密算法</title>
+    <url>/2020/09/28/jmu-python-%E5%87%AF%E6%92%92%E5%AF%86%E7%A0%81%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="7-1-jmu-python-凯撒密码加密算法-10分"><a href="#7-1-jmu-python-凯撒密码加密算法-10分" class="headerlink" title="7-1 jmu-python-凯撒密码加密算法 (10分)"></a>7-1 jmu-python-凯撒密码加密算法 (10分)</h1><p>编写一个凯撒密码加密程序，接收用户输入的文本和密钥k，对明文中的字母a-z和字母A-Z替换为其后第k个字母。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>接收两行输入，第一行为待加密的明文，第二行为密钥k。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>输出加密后的密文。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><p>在这里给出一组输入。例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Hello World!</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><p>在这里给出相应的输出。例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Khoor Zruog!</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s1 = [<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>,<span class="string">'d'</span>,<span class="string">'e'</span>,<span class="string">'f'</span>,<span class="string">'g'</span>,<span class="string">'h'</span>,<span class="string">'i'</span>,<span class="string">'j'</span>,<span class="string">'k'</span>,<span class="string">'l'</span>,<span class="string">'m'</span>,<span class="string">'n'</span>,<span class="string">'o'</span>,<span class="string">'p'</span>,<span class="string">'q'</span>,<span class="string">'r'</span>,<span class="string">'s'</span>,<span class="string">'t'</span>,<span class="string">'u'</span>,<span class="string">'v'</span>,<span class="string">'w'</span>,<span class="string">'x'</span>,<span class="string">'y'</span>,<span class="string">'z'</span>]</span><br><span class="line">s2 = [<span class="string">'A'</span>,<span class="string">'B'</span>,<span class="string">'C'</span>,<span class="string">'D'</span>,<span class="string">'E'</span>,<span class="string">'F'</span>,<span class="string">'G'</span>,<span class="string">'H'</span>,<span class="string">'I'</span>,<span class="string">'J'</span>,<span class="string">'K'</span>,<span class="string">'L'</span>,<span class="string">'M'</span>,<span class="string">'N'</span>,<span class="string">'O'</span>,<span class="string">'P'</span>,<span class="string">'Q'</span>,<span class="string">'R'</span>,<span class="string">'S'</span>,<span class="string">'T'</span>,<span class="string">'U'</span>,<span class="string">'V'</span>,<span class="string">'W'</span>,<span class="string">'X'</span>,<span class="string">'Y'</span>,<span class="string">'Z'</span>]</span><br><span class="line">s = input()</span><br><span class="line">k = int(input())</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(s)):</span><br><span class="line">    <span class="keyword">if</span> <span class="string">'a'</span> &lt;= s[i] &lt;= <span class="string">'z'</span>:</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">26</span>):</span><br><span class="line">            <span class="keyword">if</span> s1[j] == s[i]:</span><br><span class="line">                print(<span class="string">"&#123;&#125;"</span>.format(s1[(j + k) % <span class="number">26</span>]), end=<span class="string">""</span>)</span><br><span class="line">    <span class="keyword">elif</span> <span class="string">'A'</span> &lt;= s[i] &lt;= <span class="string">'Z'</span>:</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">26</span>):</span><br><span class="line">            <span class="keyword">if</span> s2[j] == s[i]:</span><br><span class="line">                print(<span class="string">"&#123;&#125;"</span>.format(s2[(j + k) % <span class="number">26</span>]), end=<span class="string">""</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"&#123;&#125;"</span>.format(s[i]),end=<span class="string">""</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>jmu-python-回文数判断</title>
+    <url>/2020/09/28/jmu-python-%E5%9B%9E%E6%96%87%E6%95%B0%E5%88%A4%E6%96%AD/</url>
+    <content><![CDATA[<h3 id="7-2-jmu-python-回文数判断（5位数字）-10分"><a href="#7-2-jmu-python-回文数判断（5位数字）-10分" class="headerlink" title="7-2 jmu-python-回文数判断（5位数字） (10分)"></a>7-2 jmu-python-回文数判断（5位数字） (10分)</h3><p>本题目要求输入一个5位自然数n，如果n的各位数字反向排列所得的自然数与n相等，则输出‘yes’，否则输出‘no’。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>13531</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>yes</p>
+<h3 id="输入样例1"><a href="#输入样例1" class="headerlink" title="输入样例1:"></a>输入样例1:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">13531</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例1"><a href="#输出样例1" class="headerlink" title="输出样例1:"></a>输出样例1:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yes</span><br></pre></td></tr></table></figure>
+
+<h3 id="输入样例2"><a href="#输入样例2" class="headerlink" title="输入样例2:"></a>输入样例2:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">13530</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例2"><a href="#输出样例2" class="headerlink" title="输出样例2:"></a>输出样例2:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">no</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = input()</span><br><span class="line"><span class="keyword">if</span> num[<span class="number">0</span>] == num[<span class="number">-1</span>]<span class="keyword">and</span> num[<span class="number">1</span>]==num[<span class="number">-2</span>]:</span><br><span class="line">    print(<span class="string">"yes"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"no"</span>)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>jmu-python-统计成绩</title>
+    <url>/2020/09/28/jmu-python-%E7%BB%9F%E8%AE%A1%E6%88%90%E7%BB%A9/</url>
+    <content><![CDATA[<h1 id="7-3-jmu-python-统计成绩-15分"><a href="#7-3-jmu-python-统计成绩-15分" class="headerlink" title="7-3 jmu-python-统计成绩 (15分)"></a>7-3 jmu-python-统计成绩 (15分)</h1><p>输入一批学生成绩，计算平均成绩，并统计不及格学生人数。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>每行输入一个数据，输入数据为<code>负数</code>结束输入</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">平均分&#x3D;XX,不及格人数&#x3D;XX&#96;,其中&#96;XX&#96;表示对应数据。如果没有学生数据，输出&#96;没有学生</span><br></pre></td></tr></table></figure>
+
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">30</span><br><span class="line">50</span><br><span class="line">70</span><br><span class="line">80</span><br><span class="line">90</span><br><span class="line">20</span><br><span class="line">-1</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">平均分&#x3D;56.67,不及格人数&#x3D;3</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = int(input())</span><br><span class="line">num = <span class="number">0</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">sum =<span class="number">0</span> </span><br><span class="line"><span class="keyword">if</span>(x&lt;<span class="number">0</span>):</span><br><span class="line">    print(<span class="string">"没有学生"</span>)</span><br><span class="line">    exit(<span class="number">0</span>)</span><br><span class="line"><span class="keyword">while</span> x &gt;= <span class="number">0</span>:</span><br><span class="line">    count = count+<span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> x &lt; <span class="number">60</span>:</span><br><span class="line">        num = num+<span class="number">1</span></span><br><span class="line">    sum = sum + x</span><br><span class="line">    x = eval(input())</span><br><span class="line">ave = sum/count</span><br><span class="line"><span class="keyword">if</span>(count &gt; <span class="number">0</span>):</span><br><span class="line">    print(<span class="string">"平均分=%.2f,不及格人数=%d"</span> % (ave, num))</span><br><span class="line"><span class="keyword">if</span>(num==<span class="number">0</span>):</span><br><span class="line">    print(<span class="string">"没有学生"</span>)</span><br><span class="line">    exit(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>jmu-python-找字符</title>
+    <url>/2020/09/28/jmu-python-%E6%89%BE%E5%AD%97%E7%AC%A6/</url>
+    <content><![CDATA[<h1 id="7-5-jmu-python-找字符-15分"><a href="#7-5-jmu-python-找字符-15分" class="headerlink" title="7-5 jmu-python-找字符 (15分)"></a>7-5 jmu-python-找字符 (15分)</h1><p>输入一个字符串及字符，输出第一次出现该字符的位置。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><ul>
+<li>行1：输入字符串</li>
+<li>行2：输入一个字符</li>
+</ul>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><ul>
+<li>找到，输出对应位置，格式<code>index=X</code>的， <code>X</code>表示查找到位置</li>
+<li>找不到，输出<code>can&#39;t find letter X</code>, <code>X</code>表示查找字符</li>
+</ul>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python</span><br><span class="line">t</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">index&#x3D;3</span><br></pre></td></tr></table></figure>
+
+<h3 id="输入样例-1"><a href="#输入样例-1" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python</span><br><span class="line">l</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例-1"><a href="#输出样例-1" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">can&#39;t find letter l</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = input()</span><br><span class="line">key = input()</span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">num =<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(s)):</span><br><span class="line">    num=num+<span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> key == s[i] :</span><br><span class="line">        print(<span class="string">"index=%d"</span>%num)</span><br><span class="line">        count = <span class="number">1</span></span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    i=i+<span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> count==<span class="number">0</span>:</span><br><span class="line">    print(<span class="string">"can't find letter %s"</span>%key)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>jmu-python-韩信点兵</title>
+    <url>/2020/09/28/jmu-python-%E9%9F%A9%E4%BF%A1%E7%82%B9%E5%85%B5/</url>
+    <content><![CDATA[<h1 id="7-2-jmu-python-韩信点兵-10分"><a href="#7-2-jmu-python-韩信点兵-10分" class="headerlink" title="7-2 jmu-python-韩信点兵 (10分)"></a>7-2 jmu-python-韩信点兵 (10分)</h1><p>在中国数学史上，广泛流传着一个“韩信点兵”的故事：韩信是汉高祖刘邦手下的大将，他英勇善战，智谋超群，为汉朝建立了卓越的功劳。据说韩信的数学水平也非常高超，他在点兵的时候，为了知道有多少兵，同时又能保住军事机密，便让士兵排队报数：</p>
+<p>按从1至5报数，记下最末一个士兵报的数为1； 再按从1至6报数，记下最末一个士兵报的数为5； 再按从1至7报数，记下最末一个士兵报的数为4； 最后按从1至11报数，最末一个士兵报的数为10； 请编写程序计算韩信至少有多少兵。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>无输入</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>输出韩信至少拥有的士兵人数。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">无输入</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输出人数</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">10000</span>):</span><br><span class="line">    <span class="keyword">if</span> (i % <span class="number">5</span> == <span class="number">1</span>) <span class="keyword">and</span> (i % <span class="number">6</span> == <span class="number">5</span>) <span class="keyword">and</span> (i % <span class="number">7</span> == <span class="number">4</span>) <span class="keyword">and</span> (i % <span class="number">11</span> == <span class="number">10</span>):</span><br><span class="line">        print(i)</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>约瑟夫环</title>
+    <url>/2020/09/28/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/</url>
+    <content><![CDATA[<h1 id="7-1-约瑟夫环（Josephus）问题-by-Yan-100分"><a href="#7-1-约瑟夫环（Josephus）问题-by-Yan-100分" class="headerlink" title="7-1 约瑟夫环（Josephus）问题(by Yan) (100分)"></a>7-1 约瑟夫环（Josephus）问题(by Yan) (100分)</h1><p>编号为1，2，…，n的n个人按顺时针方向围坐在一张圆桌周围，每人持有一个密码（正整数）。一开始任选一个正整数m作为报数上限值，从第一个人开始按顺时针方向自1开始报数，报到m时停止报数，报m的那个人出列，将他的密码作为新的m值，从他顺时针方向的下一个人开始重新从1报数，数到m的那个人又出列；如此下去，直至圆桌周围的人全部出列为止。要求按出列顺序输出n个人的编号。</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>第一行输入两个整数，依次表示人数n和初始化密码m，以空格间隔。 第二行依次输入n个整数，分别表示n个人的密码，以空格间隔。</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>按出列次序输出每个人的编号，以空格间隔。</p>
+<h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><p>在这里给出一组输入。例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">7 20</span><br><span class="line">3 1 7 2 4 8 4</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><p>在这里给出相应的输出。例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">6 1 4 7 2 3 5</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> mima;</span><br><span class="line">    <span class="keyword">int</span> num;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">next</span>;</span><span class="comment">//指针域，用于存储下一个节点的地址 </span></span><br><span class="line">&#125;LNode,*LinkList;</span><br><span class="line"><span class="comment">//**************************************</span></span><br><span class="line"> <span class="function">LinkList <span class="title">creat</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">    LNode *s,*r;</span><br><span class="line">    LinkList H = (LinkList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(LNode));</span><br><span class="line">    H-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">    H-&gt;num=<span class="number">1</span>;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;H-&gt;mima);</span><br><span class="line">     r=H;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        s=(LinkList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(LNode));</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;s-&gt;mima);</span><br><span class="line">        s-&gt;num= i;</span><br><span class="line">        r-&gt;next = s;</span><br><span class="line">        r=s;</span><br><span class="line">    &#125;</span><br><span class="line">    r-&gt;next = H;</span><br><span class="line">    H=r;</span><br><span class="line">    <span class="keyword">return</span> H;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="comment">/*****************************************************/</span></span><br><span class="line"> <span class="function"><span class="keyword">void</span> <span class="title">Find_LinkList</span><span class="params">(LinkList H,<span class="keyword">int</span>  m)</span></span>&#123;</span><br><span class="line">     LNode *p = H;</span><br><span class="line">     LNode *q;</span><br><span class="line">     <span class="keyword">while</span>(p-&gt;next!=p)&#123;</span><br><span class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;m;i++)</span><br><span class="line">          p=p-&gt;next;</span><br><span class="line">     q=p-&gt;next;</span><br><span class="line">     <span class="built_in">printf</span>(<span class="string">"%d "</span>,q-&gt;num);</span><br><span class="line">     p-&gt;next=q-&gt;next;</span><br><span class="line">     m=q-&gt;mima;</span><br><span class="line">     <span class="built_in">free</span>(q);</span><br><span class="line">    &#125;</span><br><span class="line">     <span class="built_in">printf</span>(<span class="string">"%d "</span>,p-&gt;num);</span><br><span class="line"> &#125;</span><br><span class="line"><span class="comment">/************************************************************/</span></span><br><span class="line"> <span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n=<span class="number">0</span>,m=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    LinkList H;</span><br><span class="line">    H = creat(n);</span><br><span class="line">    Find_LinkList(H,m);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>jmu-python-汇率兑换</title>
+    <url>/2020/09/28/jmu-python-%E6%B1%87%E7%8E%87%E5%85%91%E6%8D%A2/</url>
+    <content><![CDATA[<h3 id="7-1-jmu-python-汇率兑换-10分"><a href="#7-1-jmu-python-汇率兑换-10分" class="headerlink" title="7-1 jmu-python-汇率兑换 (10分)"></a>7-1 jmu-python-汇率兑换 (10分)</h3><p>按照1美元=6人民币的汇率编写一个美元和人民币的双向兑换程序</p>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式:"></a>输入格式:</h3><p>输入人民币或美元的金额，人民币格式如：R100，美元格式如：$100</p>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式:"></a>输出格式:</h3><p>输出经过汇率计算的美元或人民币的金额，格式与输入一样，币种在前，金额在后，结果保留两位小数</p>
+<h3 id="输入样例1"><a href="#输入样例1" class="headerlink" title="输入样例1:"></a>输入样例1:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">R60</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例1"><a href="#输出样例1" class="headerlink" title="输出样例1:"></a>输出样例1:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$10.00</span><br></pre></td></tr></table></figure>
+
+<h3 id="输入样例2"><a href="#输入样例2" class="headerlink" title="输入样例2:"></a>输入样例2:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$5</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出样例2"><a href="#输出样例2" class="headerlink" title="输出样例2:"></a>输出样例2:</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">R30.00</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">money=input()</span><br><span class="line">unit = money[<span class="number">0</span>]</span><br><span class="line"><span class="keyword">if</span> money[<span class="number">0</span>] == <span class="string">'R'</span>:</span><br><span class="line">    U=eval(money[<span class="number">1</span>:])/<span class="number">6</span></span><br><span class="line">    print(<span class="string">"$%.2f"</span> % U)</span><br><span class="line"><span class="keyword">elif</span> money[<span class="number">0</span>] == <span class="string">'$'</span>:</span><br><span class="line">    R=<span class="number">6</span>*eval(money[<span class="number">1</span>:])</span><br><span class="line">    print(<span class="string">"R%.2f"</span> %R)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+  </entry>
 </search>

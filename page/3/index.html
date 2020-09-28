@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/06/03/%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E8%BF%98%E5%8E%9F/">
+    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/09/15/Go%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="赵不器">
@@ -315,7 +315,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/06/03/%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E8%BF%98%E5%8E%9F/" itemprop="url">系统的备份与还原</a></h1>
+                <a class="post-title-link" href="/2020/09/15/Go%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/" itemprop="url">Go语法规范</a></h1>
         
 
         <div class="post-meta">
@@ -327,8 +327,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-03T17:27:44+08:00">
-                2020-06-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-15T20:12:33+08:00">
+                2020-09-15
               </time>
             
 
@@ -350,8 +350,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
+                  <a href="/categories/go/" itemprop="url" rel="index">
+                    <span itemprop="name">go</span>
                   </a>
                 </span>
 
@@ -389,13 +389,14 @@
       
         
           
-          备份1tar cvpzf centos7.tgz --exclude=/centos7.tgz --exclude=/proc --exclude=/lost+found --exclude=/mnt --exclude=/sys --exclude=/media /
-
-还原1tar xvpfz c
+          注意事项
+必须告诉编译器源文件需要哪些包。
+必须恰当导入需要的包，缺少了必要的包或者导入了不需要的包，程序都无法编译通过。
+import 声明必须跟在文件的package 声明之后。随后，则是组成程序的函数，变量，常量，类型的声明语句（分别由func,var,const,type定义）。这些内容的声
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2020/06/03/%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E8%BF%98%E5%8E%9F/#more" rel="contents">
+            <a class="btn" href="/2020/09/15/Go%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -448,7 +449,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/06/03/linux-%E6%89%93%E5%8C%85%E4%B8%8E%E8%A7%A3%E5%8E%8B%E7%BC%A9/">
+    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/09/15/Go%E5%91%BD%E5%90%8D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="赵不器">
@@ -467,7 +468,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/06/03/linux-%E6%89%93%E5%8C%85%E4%B8%8E%E8%A7%A3%E5%8E%8B%E7%BC%A9/" itemprop="url">linux-打包与解压缩</a></h1>
+                <a class="post-title-link" href="/2020/09/15/Go%E5%91%BD%E5%90%8D/" itemprop="url">Go命名</a></h1>
         
 
         <div class="post-meta">
@@ -479,8 +480,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-03T16:35:13+08:00">
-                2020-06-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-15T19:45:54+08:00">
+                2020-09-15
               </time>
             
 
@@ -502,8 +503,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
+                  <a href="/categories/go/" itemprop="url" rel="index">
+                    <span itemprop="name">go</span>
                   </a>
                 </span>
 
@@ -541,173 +542,22 @@
       
         
           
-          打包与解压缩打包1tar czf /tmp/etc-backup.tar.gz /etc/
+          2.1命名命名规则：
+一个名字必须以一个字母（Unicode字母）或下划线开头，后面可以跟任意数量的字母、数字或下划线。
+注意事项： 
 
-解压缩1tar xzf /tmp/etc-backup.tar.gz -C /etc/
+大写字母和小写字母是不同的：heapSort和Heapsort是两个不同的名字
 
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/06/03/linux-%E6%89%93%E5%8C%85%E4%B8%8E%E8%A7%A3%E5%8E%8B%E7%BC%A9/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-	<div>
-     
-	</div>
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
+关键字不能用于自定义名字，只能在特定语法结构中使用。
 
 
-    
-      
+关键字 
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/06/03/linux-ls/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="赵不器">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="赵不器">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/06/03/linux-ls/" itemprop="url">linux_ls</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-03T16:15:49+08:00">
-                2020-06-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          ls与pwdpwdpwd     –显示当前所在的目录
-演示
-12zhaobuqi@zhaobuqi:~$ pwd/home/zhaobuqi
-
-
-名称       pwd - 显示出当前/活动目录的名称
-概述       pwd [选项]…
-描述       输出当前工作目录的完整名称。
-1234
+break
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2020/06/03/linux-ls/#more" rel="contents">
+            <a class="btn" href="/2020/09/15/Go%E5%91%BD%E5%90%8D/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -760,7 +610,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/06/03/linux-%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/09/15/ubutun%E4%BF%AE%E6%94%B9root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="赵不器">
@@ -779,7 +629,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/06/03/linux-%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4/" itemprop="url">linux_帮助命令</a></h1>
+                <a class="post-title-link" href="/2020/09/15/ubutun%E4%BF%AE%E6%94%B9root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/" itemprop="url">ubutun修改root用户密码</a></h1>
         
 
         <div class="post-meta">
@@ -791,8 +641,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-03T15:25:45+08:00">
-                2020-06-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-15T19:19:25+08:00">
+                2020-09-15
               </time>
             
 
@@ -853,18 +703,13 @@
       
         
           
-          帮助命令
-man
-help
-info
+          1234zhaobuqi@zhaobuqi:~$ sudo passwd 新的 密码： 重新输入新的 密码： passwd：已成功更新密码
 
-命令用法演示
-man ls
-1234567891011121314151617181920NAME       ls - list directory contentsSYNOPSIS       ls [OPTION]... [FILE]...DESCRIP
-          ...
+
+          
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2020/06/03/linux-%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4/#more" rel="contents">
+            <a class="btn" href="/2020/09/15/ubutun%E4%BF%AE%E6%94%B9root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -917,7 +762,7 @@ man ls
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/06/03/linux-%E7%9B%AE%E5%BD%95/">
+    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/09/14/Go%E5%8F%98%E9%87%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="赵不器">
@@ -936,7 +781,7 @@ man ls
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/06/03/linux-%E7%9B%AE%E5%BD%95/" itemprop="url">linux_目录</a></h1>
+                <a class="post-title-link" href="/2020/09/14/Go%E5%8F%98%E9%87%8F/" itemprop="url">Go变量</a></h1>
         
 
         <div class="post-meta">
@@ -948,8 +793,420 @@ man ls
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-03T15:18:48+08:00">
-                2020-06-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-14T19:45:58+08:00">
+                2020-09-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/09/14/Go%E5%8F%98%E9%87%8F/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+	<div>
+     
+	</div>
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/09/13/%E4%BF%AE%E6%94%B9%E8%B7%AF%E7%94%B1%E5%99%A8wife%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵不器">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="赵不器">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/09/13/%E4%BF%AE%E6%94%B9%E8%B7%AF%E7%94%B1%E5%99%A8wife%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/" itemprop="url">修改路由器wife账号密码</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-13T21:28:08+08:00">
+                2020-09-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          修改wife账号密码修改流程 
+
+连接
+
+用网线将电脑与路由器lan口连接
+或者电脑连上路由器的wife
+
+
+进入路由器后台1922.168.2.1或者192.168.1.1
+
+
+在网页输入192.168.1.1或者192.168.2.1即可，登录默认密码为admin
+ 
+ 
+
+输入密码登录，默认密
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/09/13/%E4%BF%AE%E6%94%B9%E8%B7%AF%E7%94%B1%E5%99%A8wife%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+	<div>
+     
+	</div>
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/09/13/%E8%A5%BF%E9%82%AE%E5%AD%A6%E5%8F%B7%E5%AE%BD%E5%B8%A6%E7%BB%91%E5%AE%9A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵不器">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="赵不器">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/09/13/%E8%A5%BF%E9%82%AE%E5%AD%A6%E5%8F%B7%E5%AE%BD%E5%B8%A6%E7%BB%91%E5%AE%9A/" itemprop="url">西邮学号宽带绑定</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-13T21:10:52+08:00">
+                2020-09-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          绑定教程绑定流程 
+
+自助服务系统绑定账号
+安装上网客户端
+使用学号密码登录网络确定绑定成功
+
+一.绑定自助系统
+插上网线，使用浏览器打开任意网页，会自动跳转到通知页面：
+
+
+
+点右侧的用户自助服务系统，打开校园网自助系统
+
+在登录页面输入学号和对应的校园网密码（默认学号后6位），登录成功在服务，绑
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/09/13/%E8%A5%BF%E9%82%AE%E5%AD%A6%E5%8F%B7%E5%AE%BD%E5%B8%A6%E7%BB%91%E5%AE%9A/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+	<div>
+     
+	</div>
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/09/13/%E7%9B%9B%E6%9C%80%E5%A4%9A%E7%9A%84%E6%B0%B4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵不器">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="赵不器">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/09/13/%E7%9B%9B%E6%9C%80%E5%A4%9A%E7%9A%84%E6%B0%B4/" itemprop="url">盛最多的水</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-13T19:59:47+08:00">
+                2020-09-13
               </time>
             
 
@@ -971,8 +1228,8 @@ man ls
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
+                  <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
                   </a>
                 </span>
 
@@ -1010,20 +1267,12 @@ man ls
       
         
           
-          常见目录
-/  根目录
-/root  root的家目录 
-/home/username  普通用户的家目录 
-/etc  配置目录 
-/bin  命令目录 
-/sbin  管理目录 
-/usr/bin/usr/sbin  系统预装的其他命令 
-
-
-          
+          盛最多的水给你 n 个非负整数 a1，a2，…，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+说明：你不能倾斜容器，且 n 的值至少为 
+          ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2020/06/03/linux-%E7%9B%AE%E5%BD%95/#more" rel="contents">
+            <a class="btn" href="/2020/09/13/%E7%9B%9B%E6%9C%80%E5%A4%9A%E7%9A%84%E6%B0%B4/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1076,7 +1325,7 @@ man ls
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/06/02/ubuntu%E4%B8%8Bssh%E7%9A%84%E4%BD%BF%E7%94%A8/">
+    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/09/12/dos%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="赵不器">
@@ -1095,7 +1344,7 @@ man ls
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/06/02/ubuntu%E4%B8%8Bssh%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url">ubuntu下ssh的使用</a></h1>
+                <a class="post-title-link" href="/2020/09/12/dos%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D/" itemprop="url">dos的常用命令介绍</a></h1>
         
 
         <div class="post-meta">
@@ -1107,8 +1356,8 @@ man ls
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-02T21:59:06+08:00">
-                2020-06-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-12T21:26:47+08:00">
+                2020-09-12
               </time>
             
 
@@ -1130,8 +1379,8 @@ man ls
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
+                  <a href="/categories/go/" itemprop="url" rel="index">
+                    <span itemprop="name">go</span>
                   </a>
                 </span>
 
@@ -1169,20 +1418,15 @@ man ls
       
         
           
-          安装ssh1sudo apt install openssh
-ssh登录远程服务器
-ssh -l username  ip
+          dos的常用命令介绍
+查看当前目录是什么 
 
-
-ssh username@ip
-
-输入exit 退出连接
-ssh上传文件scp &lt;file&gt; username@ip:dir
-ssh下载文件scp usernm
+dir 
+12345678910111213D:\demo&gt;dir 驱动器 D 中的卷是 Data 卷的序列号是 543D-EB9C D:\demo 的目录2020/09/12  19:35    &lt;DIR&gt;          .202
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2020/06/02/ubuntu%E4%B8%8Bssh%E7%9A%84%E4%BD%BF%E7%94%A8/#more" rel="contents">
+            <a class="btn" href="/2020/09/12/dos%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1235,7 +1479,7 @@ ssh下载文件scp usernm
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/06/02/ubuntu%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E8%BE%93%E5%85%A5%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/09/08/go%E5%85%A5%E9%97%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="赵不器">
@@ -1254,7 +1498,7 @@ ssh下载文件scp usernm
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/06/02/ubuntu%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E8%BE%93%E5%85%A5%E6%B3%95/" itemprop="url">ubuntu安装百度输入法</a></h1>
+                <a class="post-title-link" href="/2020/09/08/go%E5%85%A5%E9%97%A8/" itemprop="url">入门</a></h1>
         
 
         <div class="post-meta">
@@ -1266,8 +1510,8 @@ ssh下载文件scp usernm
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-02T21:44:05+08:00">
-                2020-06-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-08T21:11:03+08:00">
+                2020-09-08
               </time>
             
 
@@ -1276,6 +1520,28 @@ ssh下载文件scp usernm
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/go/" itemprop="url" rel="index">
+                    <span itemprop="name">go</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1306,13 +1572,11 @@ ssh下载文件scp usernm
       
         
           
-          解决依赖12# 通过命令行安装 aptitudesudo apt-get install aptitude -y
-使用aptitude解决安装依赖的问题
-安装fcitx12# 通过命令行利用 aptitude 安装 fcitx 和 qt 等sudo aptitude install fcitx-bi
+          hello world1234567package mainimport "fmt"//main 包比较特殊。它定义了一个独立可执行的程序，而不是一个库func main()&#123;    //一个函数的声明由 func 关键字、函数名、参数列表、返回值列表以及包含在大括号里的函数体组成    
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2020/06/02/ubuntu%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E8%BE%93%E5%85%A5%E6%B3%95/#more" rel="contents">
+            <a class="btn" href="/2020/09/08/go%E5%85%A5%E9%97%A8/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1365,7 +1629,7 @@ ssh下载文件scp usernm
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/06/01/git%E5%AD%A6%E4%B9%A0/">
+    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/09/07/git%E5%AD%A6%E4%B9%A02/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="赵不器">
@@ -1384,7 +1648,7 @@ ssh下载文件scp usernm
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/06/01/git%E5%AD%A6%E4%B9%A0/" itemprop="url">git学习</a></h1>
+                <a class="post-title-link" href="/2020/09/07/git%E5%AD%A6%E4%B9%A02/" itemprop="url">git学习2</a></h1>
         
 
         <div class="post-meta">
@@ -1396,8 +1660,8 @@ ssh下载文件scp usernm
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-01T22:22:37+08:00">
-                2020-06-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-07T21:23:24+08:00">
+                2020-09-07
               </time>
             
 
@@ -1458,317 +1722,14 @@ ssh下载文件scp usernm
       
         
           
-          初始化设置12git config --global user.name &quot;your name&quot;git config --global user.email &quot;your email&quot;
+          git命令的补充
+git add . 提交全部文件到暂存区
 
-设置ssh key1ssh-keygen -t rsa -C &quot;
-          ...
+
+          
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2020/06/01/git%E5%AD%A6%E4%B9%A0/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-	<div>
-     
-	</div>
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/05/31/ubuntu%E5%AE%89%E8%A3%85typora/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="赵不器">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="赵不器">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/05/31/ubuntu%E5%AE%89%E8%A3%85typora/" itemprop="url">ubuntu安装typora</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-31T22:41:12+08:00">
-                2020-05-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          12345678910# or run:# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAEwget -qO - https:&#x2F;&#x2F;typora.io&#x2F;linux&
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/05/31/ubuntu%E5%AE%89%E8%A3%85typora/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-	<div>
-     
-	</div>
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhaobuqi-01.github.io/2020/05/28/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="赵不器">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="赵不器">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/05/28/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/" itemprop="url">本地分支推送到远程分支</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-28T23:53:49+08:00">
-                2020-05-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index">
-                    <span itemprop="name">git</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          1.有远程分支remote_branch,有本地分支local_branch,本地分支与远程分支关联,已经切换到本地分支
-git push
-
-2.有远程分支remote_branch,有本地分支local_branch,本地分支与远程分支不关联,已经切换到本地分支
-git push -u origi
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/05/28/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/#more" rel="contents">
+            <a class="btn" href="/2020/09/07/git%E5%AD%A6%E4%B9%A02/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1812,7 +1773,7 @@ git push -u origi
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/">&lt;&lt;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">&gt;&gt;</a>
+    <a class="extend prev" rel="prev" href="/page/2/">&lt;&lt;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/">&gt;&gt;</a>
   </nav>
 
 
@@ -1862,7 +1823,7 @@ git push -u origi
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-count">43</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1873,7 +1834,7 @@ git push -u origi
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>

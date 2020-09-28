@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2020-09-26T09:13:03.604Z</updated>
+  <updated>2020-09-28T15:41:39.727Z</updated>
   <id>https://zhaobuqi-01.github.io/</id>
   
   <author>
@@ -15,6 +15,270 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jmu-python-判断闰年</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E5%88%A4%E6%96%AD%E9%97%B0%E5%B9%B4/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E5%88%A4%E6%96%AD%E9%97%B0%E5%B9%B4/</id>
+    <published>2020-09-28T15:40:44.000Z</published>
+    <updated>2020-09-28T15:41:39.727Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;7-5-jmu-python-判断闰年-10分&quot;&gt;&lt;a href=&quot;#7-5-jmu-python-判断闰年-10分&quot; class=&quot;headerlink&quot; title=&quot;7-5 jmu-python-判断闰年 (10分)&quot;&gt;&lt;/a&gt;7-5 jmu-python-
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jmu-python-分段函数</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0/</id>
+    <published>2020-09-28T15:39:38.000Z</published>
+    <updated>2020-09-28T15:40:17.370Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;7-3-jmu-python-分段函数-10分&quot;&gt;&lt;a href=&quot;#7-3-jmu-python-分段函数-10分&quot; class=&quot;headerlink&quot; title=&quot;7-3 jmu-python-分段函数 (10分)&quot;&gt;&lt;/a&gt;7-3 jmu-python-
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jmu-python-回文数判断</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E5%9B%9E%E6%96%87%E6%95%B0%E5%88%A4%E6%96%AD/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E5%9B%9E%E6%96%87%E6%95%B0%E5%88%A4%E6%96%AD/</id>
+    <published>2020-09-28T15:38:33.000Z</published>
+    <updated>2020-09-28T15:39:13.616Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;7-2-jmu-python-回文数判断（5位数字）-10分&quot;&gt;&lt;a href=&quot;#7-2-jmu-python-回文数判断（5位数字）-10分&quot; class=&quot;headerlink&quot; title=&quot;7-2 jmu-python-回文数判断（5位数字） (10分)
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jmu-python-汇率兑换</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E6%B1%87%E7%8E%87%E5%85%91%E6%8D%A2/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E6%B1%87%E7%8E%87%E5%85%91%E6%8D%A2/</id>
+    <published>2020-09-28T15:37:24.000Z</published>
+    <updated>2020-09-28T15:38:07.170Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;7-1-jmu-python-汇率兑换-10分&quot;&gt;&lt;a href=&quot;#7-1-jmu-python-汇率兑换-10分&quot; class=&quot;headerlink&quot; title=&quot;7-1 jmu-python-汇率兑换 (10分)&quot;&gt;&lt;/a&gt;7-1 jmu-python-
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>约瑟夫环</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/</id>
+    <published>2020-09-28T15:36:07.000Z</published>
+    <updated>2020-09-28T15:36:55.344Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;7-1-约瑟夫环（Josephus）问题-by-Yan-100分&quot;&gt;&lt;a href=&quot;#7-1-约瑟夫环（Josephus）问题-by-Yan-100分&quot; class=&quot;headerlink&quot; title=&quot;7-1 约瑟夫环（Josephus）问题(by Yan)
+      
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="https://zhaobuqi-01.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jmu-python-凯撒密码加密算法</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E5%87%AF%E6%92%92%E5%AF%86%E7%A0%81%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E5%87%AF%E6%92%92%E5%AF%86%E7%A0%81%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/</id>
+    <published>2020-09-28T15:33:24.000Z</published>
+    <updated>2020-09-28T15:34:26.515Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;7-1-jmu-python-凯撒密码加密算法-10分&quot;&gt;&lt;a href=&quot;#7-1-jmu-python-凯撒密码加密算法-10分&quot; class=&quot;headerlink&quot; title=&quot;7-1 jmu-python-凯撒密码加密算法 (10分)&quot;&gt;&lt;/a&gt;7-1
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jmu-python-韩信点兵</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E9%9F%A9%E4%BF%A1%E7%82%B9%E5%85%B5/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E9%9F%A9%E4%BF%A1%E7%82%B9%E5%85%B5/</id>
+    <published>2020-09-28T15:31:38.000Z</published>
+    <updated>2020-09-28T15:32:28.506Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;7-2-jmu-python-韩信点兵-10分&quot;&gt;&lt;a href=&quot;#7-2-jmu-python-韩信点兵-10分&quot; class=&quot;headerlink&quot; title=&quot;7-2 jmu-python-韩信点兵 (10分)&quot;&gt;&lt;/a&gt;7-2 jmu-python-
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jmu-python-统计成绩</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E7%BB%9F%E8%AE%A1%E6%88%90%E7%BB%A9/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E7%BB%9F%E8%AE%A1%E6%88%90%E7%BB%A9/</id>
+    <published>2020-09-28T15:30:21.000Z</published>
+    <updated>2020-09-28T15:31:19.175Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;7-3-jmu-python-统计成绩-15分&quot;&gt;&lt;a href=&quot;#7-3-jmu-python-统计成绩-15分&quot; class=&quot;headerlink&quot; title=&quot;7-3 jmu-python-统计成绩 (15分)&quot;&gt;&lt;/a&gt;7-3 jmu-python-
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jmu-python-偶数之积</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E5%81%B6%E6%95%B0%E4%B9%8B%E7%A7%AF/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E5%81%B6%E6%95%B0%E4%B9%8B%E7%A7%AF/</id>
+    <published>2020-09-28T15:18:39.000Z</published>
+    <updated>2020-09-28T15:21:25.701Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;7-4-jmu-python-偶数之积-10分&quot;&gt;&lt;a href=&quot;#7-4-jmu-python-偶数之积-10分&quot; class=&quot;headerlink&quot; title=&quot;7-4 jmu-python-偶数之积 (10分)&quot;&gt;&lt;/a&gt;7-4 jmu-python-
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jmu-python-找字符</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E6%89%BE%E5%AD%97%E7%AC%A6/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E6%89%BE%E5%AD%97%E7%AC%A6/</id>
+    <published>2020-09-28T15:17:14.000Z</published>
+    <updated>2020-09-28T15:18:21.596Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;7-5-jmu-python-找字符-15分&quot;&gt;&lt;a href=&quot;#7-5-jmu-python-找字符-15分&quot; class=&quot;headerlink&quot; title=&quot;7-5 jmu-python-找字符 (15分)&quot;&gt;&lt;/a&gt;7-5 jmu-python-找字符
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python--循环结构</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/Python-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/Python-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</id>
+    <published>2020-09-28T12:01:20.000Z</published>
+    <updated>2020-09-28T12:18:42.897Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;循环结构&quot;&gt;&lt;a href=&quot;#循环结构&quot; class=&quot;headerlink&quot; title=&quot;循环结构&quot;&gt;&lt;/a&gt;循环结构&lt;/h1&gt;&lt;h2 id=&quot;while语句&quot;&gt;&lt;a href=&quot;#while语句&quot; class=&quot;headerlink&quot; title=&quot;whi
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>韩信点兵-Python</title>
+    <link href="https://zhaobuqi-01.github.io/2020/09/28/%E9%9F%A9%E4%BF%A1%E7%82%B9%E5%85%B5-Python/"/>
+    <id>https://zhaobuqi-01.github.io/2020/09/28/%E9%9F%A9%E4%BF%A1%E7%82%B9%E5%85%B5-Python/</id>
+    <published>2020-09-28T11:24:41.000Z</published>
+    <updated>2020-09-28T12:00:55.805Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;7-2-jmu-python-韩信点兵-10分&quot;&gt;&lt;a href=&quot;#7-2-jmu-python-韩信点兵-10分&quot; class=&quot;headerlink&quot; title=&quot;7-2 jmu-python-韩信点兵 (10分)&quot;&gt;&lt;/a&gt;7-2 jmu-python-
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Git入门</title>
@@ -190,276 +454,6 @@
     
       <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Go语法规范</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/15/Go%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/15/Go%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/</id>
-    <published>2020-09-15T12:12:33.000Z</published>
-    <updated>2020-09-15T12:31:23.674Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;注意事项&quot;&gt;&lt;a href=&quot;#注意事项&quot; class=&quot;headerlink&quot; title=&quot;注意事项&quot;&gt;&lt;/a&gt;注意事项&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;必须告诉编译器源文件需要哪些包。&lt;/li&gt;
-&lt;li&gt;必须恰当导入需要的包，缺少了必要的包或者导入了不需要的包，程
-      
-    
-    </summary>
-    
-    
-      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Go命名</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/15/Go%E5%91%BD%E5%90%8D/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/15/Go%E5%91%BD%E5%90%8D/</id>
-    <published>2020-09-15T11:45:54.000Z</published>
-    <updated>2020-09-15T12:32:01.635Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;2-1命名&quot;&gt;&lt;a href=&quot;#2-1命名&quot; class=&quot;headerlink&quot; title=&quot;2.1命名&quot;&gt;&lt;/a&gt;2.1命名&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;命名规则：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;一个名字必须以一个字母（Unicode字母）或下划线开头
-      
-    
-    </summary>
-    
-    
-      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ubutun修改root用户密码</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/15/ubutun%E4%BF%AE%E6%94%B9root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/15/ubutun%E4%BF%AE%E6%94%B9root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/</id>
-    <published>2020-09-15T11:19:25.000Z</published>
-    <updated>2020-09-15T11:39:57.544Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
-      
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Go变量</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/14/Go%E5%8F%98%E9%87%8F/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/14/Go%E5%8F%98%E9%87%8F/</id>
-    <published>2020-09-14T11:45:58.000Z</published>
-    <updated>2020-09-14T11:45:58.600Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>修改路由器wife账号密码</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/13/%E4%BF%AE%E6%94%B9%E8%B7%AF%E7%94%B1%E5%99%A8wife%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/13/%E4%BF%AE%E6%94%B9%E8%B7%AF%E7%94%B1%E5%99%A8wife%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/</id>
-    <published>2020-09-13T13:28:08.000Z</published>
-    <updated>2020-09-13T13:47:20.564Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;修改wife账号密码&quot;&gt;&lt;a href=&quot;#修改wife账号密码&quot; class=&quot;headerlink&quot; title=&quot;修改wife账号密码&quot;&gt;&lt;/a&gt;修改wife账号密码&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;修改流程&lt;/strong&gt; &lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>西邮学号宽带绑定</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/13/%E8%A5%BF%E9%82%AE%E5%AD%A6%E5%8F%B7%E5%AE%BD%E5%B8%A6%E7%BB%91%E5%AE%9A/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/13/%E8%A5%BF%E9%82%AE%E5%AD%A6%E5%8F%B7%E5%AE%BD%E5%B8%A6%E7%BB%91%E5%AE%9A/</id>
-    <published>2020-09-13T13:10:52.000Z</published>
-    <updated>2020-09-13T13:27:33.304Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;绑定教程&quot;&gt;&lt;a href=&quot;#绑定教程&quot; class=&quot;headerlink&quot; title=&quot;绑定教程&quot;&gt;&lt;/a&gt;绑定教程&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;绑定流程&lt;/strong&gt; &lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;自助服务系统绑定账号&lt;/li&gt;
-&lt;li&gt;安装上网客户
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>盛最多的水</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/13/%E7%9B%9B%E6%9C%80%E5%A4%9A%E7%9A%84%E6%B0%B4/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/13/%E7%9B%9B%E6%9C%80%E5%A4%9A%E7%9A%84%E6%B0%B4/</id>
-    <published>2020-09-13T11:59:47.000Z</published>
-    <updated>2020-09-13T12:23:33.277Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;盛最多的水&quot;&gt;&lt;a href=&quot;#盛最多的水&quot; class=&quot;headerlink&quot; title=&quot;盛最多的水&quot;&gt;&lt;/a&gt;盛最多的水&lt;/h1&gt;&lt;p&gt;给你 n 个非负整数 a1，a2，…，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂
-      
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="https://zhaobuqi-01.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>dos的常用命令介绍</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/12/dos%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/12/dos%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D/</id>
-    <published>2020-09-12T13:26:47.000Z</published>
-    <updated>2020-09-12T14:29:28.485Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;dos的常用命令介绍&quot;&gt;&lt;a href=&quot;#dos的常用命令介绍&quot; class=&quot;headerlink&quot; title=&quot;dos的常用命令介绍&quot;&gt;&lt;/a&gt;dos的常用命令介绍&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;查看当前目录是什么 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong
-      
-    
-    </summary>
-    
-    
-      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>入门</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/08/go%E5%85%A5%E9%97%A8/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/08/go%E5%85%A5%E9%97%A8/</id>
-    <published>2020-09-08T13:11:03.000Z</published>
-    <updated>2020-09-11T12:45:14.805Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;hello-world&quot;&gt;&lt;a href=&quot;#hello-world&quot; class=&quot;headerlink&quot; title=&quot;hello world&quot;&gt;&lt;/a&gt;hello world&lt;/h1&gt;&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>git学习2</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/07/git%E5%AD%A6%E4%B9%A02/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/07/git%E5%AD%A6%E4%B9%A02/</id>
-    <published>2020-09-07T13:23:24.000Z</published>
-    <updated>2020-09-20T12:53:37.711Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;git命令的补充&quot;&gt;&lt;a href=&quot;#git命令的补充&quot; class=&quot;headerlink&quot; title=&quot;git命令的补充&quot;&gt;&lt;/a&gt;git命令的补充&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;git add . &lt;strong&gt;提交全部文件到暂存区&lt;/strong&gt;&lt;/l
-      
-    
-    </summary>
-    
-    
-      <category term="git" scheme="https://zhaobuqi-01.github.io/categories/git/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hexo常用指令</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/07/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/07/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</id>
-    <published>2020-09-07T12:53:20.000Z</published>
-    <updated>2020-09-07T13:45:58.828Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;*&lt;em&gt;1.hexo n *&lt;/em&gt; 新建一篇文章&lt;/p&gt;
-&lt;p&gt;*&lt;em&gt;2. hexo init *&lt;/em&gt; 初始化一个网站&lt;/p&gt;
-&lt;p&gt;*&lt;em&gt;3. hexo g *&lt;/em&gt; 生成静态文件，在发布到GitHub前需要先生成静态文件&lt;/p&gt;
-&lt;p&gt;*&lt;em&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="hexo的使用" scheme="https://zhaobuqi-01.github.io/categories/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ubutun安装qq和微信</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/06/ubuntu%E5%AE%89%E8%A3%85qq%E5%92%8C%E5%BE%AE%E4%BF%A1/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/06/ubuntu%E5%AE%89%E8%A3%85qq%E5%92%8C%E5%BE%AE%E4%BF%A1/</id>
-    <published>2020-09-06T03:17:41.555Z</published>
-    <updated>2020-06-12T12:37:24.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;1-安装deepin&quot;&gt;&lt;a href=&quot;#1-安装deepin&quot; class=&quot;headerlink&quot; title=&quot;1.安装deepin&quot;&gt;&lt;/a&gt;1.安装deepin&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;1.使用git将deepin克隆到本地&lt;/strong&gt;&lt;/
-      
-    
-    </summary>
-    
-    
-      <category term="linux" scheme="https://zhaobuqi-01.github.io/categories/linux/"/>
-    
-    
-      <category term="deepin" scheme="https://zhaobuqi-01.github.io/tags/deepin/"/>
     
   </entry>
   
