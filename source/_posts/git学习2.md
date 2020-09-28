@@ -9,4 +9,4 @@ copyright:
 # git命令的补充
 
 1. git add . **提交全部文件到暂存区**
-2. 
+
