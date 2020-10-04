@@ -1101,4 +1101,16 @@
         <category>go</category>
       </categories>
   </entry>
+  <entry>
+    <title>逻辑运算符的注意事项与细节</title>
+    <url>/2020/10/04/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E7%BB%86%E8%8A%82/</url>
+    <content><![CDATA[<ol>
+<li><code>&amp;&amp;</code> 也叫短路与，如果第一个条件为false,则第二个条件不会判断，最终结果为false。</li>
+<li><code>||</code> 也叫短路或，如果第一个条件为true，则第二个条件不会判断，最终结果为true。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
 </search>

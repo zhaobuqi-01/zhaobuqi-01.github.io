@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2020-10-04T13:22:17.959Z</updated>
+  <updated>2020-10-04T14:11:54.004Z</updated>
   <id>https://zhaobuqi-01.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>逻辑运算符的注意事项与细节</title>
+    <link href="https://zhaobuqi-01.github.io/2020/10/04/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E7%BB%86%E8%8A%82/"/>
+    <id>https://zhaobuqi-01.github.io/2020/10/04/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E7%BB%86%E8%8A%82/</id>
+    <published>2020-10-04T14:08:27.000Z</published>
+    <updated>2020-10-04T14:11:54.004Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; 也叫短路与，如果第一个条件为false,则第二个条件不会判断，最终结果为false。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;||&lt;/code&gt; 也叫短路或，如果第一个条件为true，则第二个条件不会判断，最终结果为true
+      
+    
+    </summary>
+    
+    
+      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>标识符的注意事项</title>
@@ -430,28 +454,6 @@
       
       
         &lt;h1 id=&quot;go语言的数据类型的零值&quot;&gt;&lt;a href=&quot;#go语言的数据类型的零值&quot; class=&quot;headerlink&quot; title=&quot;go语言的数据类型的零值&quot;&gt;&lt;/a&gt;go语言的数据类型的零值&lt;/h1&gt;&lt;figure class=&quot;highlight go&quot;&gt;&lt;tab
-      
-    
-    </summary>
-    
-    
-      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>字符串类型</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/20/Go%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/20/Go%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/</id>
-    <published>2020-09-20T13:14:04.000Z</published>
-    <updated>2020-09-20T13:39:37.703Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;字符串的基本使用&quot;&gt;&lt;a href=&quot;#字符串的基本使用&quot; class=&quot;headerlink&quot; title=&quot;字符串的基本使用&quot;&gt;&lt;/a&gt;字符串的基本使用&lt;/h1&gt;&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class
       
     
     </summary>
