@@ -1088,4 +1088,17 @@
     <content><![CDATA[<p>将博客搬至CSDN</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>标识符的注意事项</title>
+    <url>/2020/10/04/%E6%A0%87%E8%AF%86%E7%AC%A6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+    <content><![CDATA[<h1 id="标识符命名注意事项"><a href="#标识符命名注意事项" class="headerlink" title="标识符命名注意事项"></a>标识符命名注意事项</h1><ul>
+<li>包名与所在文件夹的名称保持一至。</li>
+<li>变量名，函数名，常量名：采用驼峰法</li>
+<li>如果变量名，函数名，常量名首字母<strong>大写</strong> ，则可以被其他的包访问；如果首字母小写，则只能在本包使用。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
 </search>
