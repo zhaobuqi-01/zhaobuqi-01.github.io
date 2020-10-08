@@ -1252,4 +1252,28 @@ str = <span class="string">"hello,world!"</span>
         <category>go</category>
       </categories>
   </entry>
+  <entry>
+    <title>Go-跳转语句</title>
+    <url>/2020/10/08/Go-%E8%B7%B3%E8%BD%AC%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<h1 id="跳转语句"><a href="#跳转语句" class="headerlink" title="跳转语句"></a>跳转语句</h1><h2 id="break跳转语句"><a href="#break跳转语句" class="headerlink" title="break跳转语句"></a>break跳转语句</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line"><span class="comment">//break语句用于终止某个语句块的执行，用于中断当前for循环或跳出switch语句。</span></span><br><span class="line">&#123;</span><br><span class="line">    ......</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>break默认跳出最近的for循环</li>
+<li>break后面可以指定标签，跳出标签对应的for循环【可以配合标签使用】</li>
+</ol>
+<h2 id="continue跳转语句"><a href="#continue跳转语句" class="headerlink" title="continue跳转语句"></a>continue跳转语句</h2><ol>
+<li>continue语句用于结束本次循环，继续执行下一次循环。</li>
+<li>continue可以使用标签跳出</li>
+</ol>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">&#123;</span><br><span class="line">    ......</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="goto跳转语句"><a href="#goto跳转语句" class="headerlink" title="goto跳转语句"></a>goto跳转语句</h2><p>跳转到标签所在代码处，不再执行goto后面的代码</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line"><span class="keyword">goto</span> label</span><br><span class="line">......</span><br><span class="line">label:statement</span><br></pre></td></tr></table></figure>
+
+<h2 id="return跳转语句"><a href="#return跳转语句" class="headerlink" title="return跳转语句"></a>return跳转语句</h2><p>跳出所在的方法或者函数</p>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
 </search>
