@@ -201,12 +201,46 @@ str = <span class="string">"hello,world!"</span>
 }
 <span class="comment">//当存在汉字时，不会出现乱码</span>
 <span class="comment">//for-range遍历使用的是字符的方式遍历</span>
-&lt;!--￼<span class="number">10</span>--&gt;</code></pre>
+&lt;!--￼<span class="number">10</span>--&gt;
+</code></pre>
 </li>
-<li><p>break默认跳出最近的for循环</p>
+</ol>
+<p><strong>for循环执行的顺序说明</strong> </p>
+<ol>
+<li>执行循环变量初始化</li>
+<li>执行循环条件</li>
+<li>如果条件为真，则执行循环体</li>
+<li>执行循环变量迭代</li>
+<li>继续执行2，3，4，直到循环条件为假(false)，退出for循环</li>
+</ol>
+<p><strong>for循环的细节与 注意事项</strong> </p>
+<ol>
+<li><pre><code class="go"><span class="comment">//for-range遍历字符串，数组</span>
+<span class="comment">/***************传统方法********************/</span>
+<span class="keyword">var</span> str <span class="keyword">string</span> = <span class="string">"hello,world!"</span>
+<span class="keyword">for</span> i:=<span class="number">0</span>;i&lt;<span class="built_in">len</span>(str);i++;{
+    fmt.printf(<span class="string">"%c\n"</span>,str[i])
+}
+<span class="comment">//当出现汉字是会出现乱码，汉字在utf-8里占3个字节，而读取则是一个字节</span>
+<span class="comment">/****************4.for-range*****************/</span>
+str = <span class="string">"hello,world!"</span>
+<span class="keyword">for</span> index,val := <span class="keyword">range</span> str {
+    fmt.printf(<span class="string">"index=%d,val=%c\n"</span>,index,val)
+}
+<span class="comment">//当存在汉字时，不会出现乱码</span>
+<span class="comment">//for-range遍历使用的是字符的方式遍历</span>
+&lt;!--￼<span class="number">11</span>--&gt;
+</code></pre>
 </li>
-<li><p>break后面可以指定标签，跳出标签对应的for循环【可以配合标签使用】</p>
-</li>
+</ol>
+<p><strong><em>do while 循环的实现</em></strong> </p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">循环变量初始化</span><br><span class="line"><span class="keyword">for</span>&#123;</span><br><span class="line">    循环体</span><br><span class="line">    循环变量迭代</span><br><span class="line">    <span class="keyword">if</span> 循环条件表达式&#123;</span><br><span class="line">        <span class="keyword">break</span> <span class="comment">//跳出for循环【结束for循环】</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//至少执行一次</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="跳转语句"><a href="#跳转语句" class="headerlink" title="跳转语句"></a>跳转语句</h1><h2 id="break跳转语句"><a href="#break跳转语句" class="headerlink" title="break跳转语句"></a>break跳转语句</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line"><span class="comment">//break语句用于终止某个语句块的执行，用于中断当前for循环或跳出switch语句。</span></span><br><span class="line">&#123;</span><br><span class="line">    ......</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>break默认跳出最近的for循环</li>
+<li>break后面可以指定标签，跳出标签对应的for循环【可以配合标签使用】</li>
 </ol>
 <h2 id="continue跳转语句"><a href="#continue跳转语句" class="headerlink" title="continue跳转语句"></a>continue跳转语句</h2><ol>
 <li>continue语句用于结束本次循环，继续执行下一次循环。</li>
