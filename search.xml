@@ -1325,23 +1325,7 @@ str = <span class="string">"hello,world!"</span>
 </ol>
 <p><strong>for循环的细节与 注意事项</strong> </p>
 <ol>
-<li><pre><code class="go"><span class="comment">//for-range遍历字符串，数组</span>
-<span class="comment">/***************传统方法********************/</span>
-<span class="keyword">var</span> str <span class="keyword">string</span> = <span class="string">"hello,world!"</span>
-<span class="keyword">for</span> i:=<span class="number">0</span>;i&lt;<span class="built_in">len</span>(str);i++;{
-    fmt.printf(<span class="string">"%c\n"</span>,str[i])
-}
-<span class="comment">//当出现汉字是会出现乱码，汉字在utf-8里占3个字节，而读取则是一个字节</span>
-<span class="comment">/****************4.for-range*****************/</span>
-str = <span class="string">"hello,world!"</span>
-<span class="keyword">for</span> index,val := <span class="keyword">range</span> str {
-    fmt.printf(<span class="string">"index=%d,val=%c\n"</span>,index,val)
-}
-<span class="comment">//当存在汉字时，不会出现乱码</span>
-<span class="comment">//for-range遍历使用的是字符的方式遍历</span>
-&lt;!--￼<span class="number">1</span>--&gt;
-</code></pre>
-</li>
+<li>```go<br>//for-range遍历字符串，数组<br>/<strong><strong><strong>***</strong></strong></strong>传统方法<strong><strong><strong><strong>****</strong></strong></strong></strong>/<br>var str string = “hello,world!”<br>for i:=0;i&lt;len(str);i++;{<pre><code>fmt.printf(&quot;%c\n&quot;,str[i])</code></pre>}<br>//当出现汉字是会出现乱码，汉字在utf-8里占3个字节，而读取则是一个字节<br>/<strong><strong><strong>****</strong></strong></strong>4.for-range<strong><strong><strong>*****</strong></strong></strong>/<br>str = “hello,world!”<br>for index,val := range str {<pre><code>fmt.printf(&quot;index=%d,val=%c\n&quot;,index,val)</code></pre>}<br>//当存在汉字时，不会出现乱码<br>//for-range遍历使用的是字符的方式遍历<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## while与do while的实现</span><br><span class="line"></span><br><span class="line">**Golang里没有while和do while语法** </span><br><span class="line"></span><br><span class="line">***while循环的实现*** </span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;go</span><br><span class="line">&#x2F;&#x2F;语法</span><br><span class="line">循环变量初始化</span><br><span class="line">for&#123;</span><br><span class="line">    if 循环条件表达式&#123;</span><br><span class="line">        break&#x2F;&#x2F;跳出for循环</span><br><span class="line">    &#125;</span><br><span class="line">    循环体</span><br><span class="line">    循环变量迭代</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 <p><strong><em>do while 循环的实现</em></strong> </p>
 <figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">循环变量初始化</span><br><span class="line"><span class="keyword">for</span>&#123;</span><br><span class="line">    循环体</span><br><span class="line">    循环变量迭代</span><br><span class="line">    <span class="keyword">if</span> 循环条件表达式&#123;</span><br><span class="line">        <span class="keyword">break</span> <span class="comment">//跳出for循环【结束for循环】</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//至少执行一次</span></span><br></pre></td></tr></table></figure>
