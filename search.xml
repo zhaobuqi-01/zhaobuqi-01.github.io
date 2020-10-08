@@ -1077,12 +1077,6 @@ str = <span class="string">"hello,world!"</span>
       </categories>
   </entry>
   <entry>
-    <title>将博客搬至CSDN</title>
-    <url>/2020/10/04/%E5%B0%86%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%87%B3CSDN/</url>
-    <content><![CDATA[<p>将博客搬至CSDN</p>
-]]></content>
-  </entry>
-  <entry>
     <title>本地分支推送到远程分支</title>
     <url>/2020/05/28/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/</url>
     <content><![CDATA[<h2 id="1-有远程分支remote-branch-有本地分支local-branch-本地分支与远程分支关联-已经切换到本地分支"><a href="#1-有远程分支remote-branch-有本地分支local-branch-本地分支与远程分支关联-已经切换到本地分支" class="headerlink" title="1.有远程分支remote_branch,有本地分支local_branch,本地分支与远程分支关联,已经切换到本地分支"></a>1.有远程分支remote_branch,有本地分支local_branch,本地分支与远程分支关联,已经切换到本地分支</h2><blockquote>
