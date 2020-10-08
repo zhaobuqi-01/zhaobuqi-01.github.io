@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2020-10-08T09:44:45.968Z</updated>
+  <updated>2020-10-08T09:47:11.367Z</updated>
   <id>https://zhaobuqi-01.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Go-for循环</title>
+    <link href="https://zhaobuqi-01.github.io/2020/10/08/Go-for%E5%BE%AA%E7%8E%AF/"/>
+    <id>https://zhaobuqi-01.github.io/2020/10/08/Go-for%E5%BE%AA%E7%8E%AF/</id>
+    <published>2020-10-08T09:45:29.000Z</published>
+    <updated>2020-10-08T09:47:11.367Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;for-循环控制&quot;&gt;&lt;a href=&quot;#for-循环控制&quot; class=&quot;headerlink&quot; title=&quot;for 循环控制&quot;&gt;&lt;/a&gt;for 循环控制&lt;/h1&gt;&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class
+      
+    
+    </summary>
+    
+    
+      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Go-跳转语句</title>
@@ -434,28 +456,6 @@
       
       
         &lt;h1 id=&quot;循环结构&quot;&gt;&lt;a href=&quot;#循环结构&quot; class=&quot;headerlink&quot; title=&quot;循环结构&quot;&gt;&lt;/a&gt;循环结构&lt;/h1&gt;&lt;h2 id=&quot;while语句&quot;&gt;&lt;a href=&quot;#while语句&quot; class=&quot;headerlink&quot; title=&quot;whi
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>韩信点兵-Python</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/28/%E9%9F%A9%E4%BF%A1%E7%82%B9%E5%85%B5-Python/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/28/%E9%9F%A9%E4%BF%A1%E7%82%B9%E5%85%B5-Python/</id>
-    <published>2020-09-28T11:24:41.000Z</published>
-    <updated>2020-09-28T12:00:55.805Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;7-2-jmu-python-韩信点兵-10分&quot;&gt;&lt;a href=&quot;#7-2-jmu-python-韩信点兵-10分&quot; class=&quot;headerlink&quot; title=&quot;7-2 jmu-python-韩信点兵 (10分)&quot;&gt;&lt;/a&gt;7-2 jmu-python-
       
     
     </summary>
