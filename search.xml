@@ -126,8 +126,8 @@
       </categories>
   </entry>
   <entry>
-    <title>Go-顺序结构与分支结构</title>
-    <url>/2020/10/05/Go-%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</url>
+    <title>程序流程控制</title>
+    <url>/2020/10/08/Go-%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</url>
     <content><![CDATA[<h1 id="顺序结构"><a href="#顺序结构" class="headerlink" title="顺序结构"></a>顺序结构</h1><p>程序从上到下逐次地执行，中间没有任何判断与跳转。</p>
 <h1 id="分支控制"><a href="#分支控制" class="headerlink" title="分支控制"></a>分支控制</h1><p>分支控制就是让程序有选择的执行</p>
 <h2 id="单分支"><a href="#单分支" class="headerlink" title="单分支"></a>单分支</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line">#语法</span><br><span class="line"><span class="keyword">if</span> 条件表达式&#123;</span><br><span class="line">    执行代码块</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -175,6 +175,44 @@
 <li>如果判断的具体的数值不多，而且符合整数，浮点数，字符，字符串，使用switch</li>
 <li>对于区间判断和结果为布尔值的情况使用*<em>if else *</em> </li>
 </ol>
+<h1 id="for-循环控制"><a href="#for-循环控制" class="headerlink" title="for 循环控制"></a>for 循环控制</h1><figure class="highlight go"><table><tr><td class="code"><pre><span class="line">#语法 </span><br><span class="line"><span class="comment">/**************1.********************/</span></span><br><span class="line"><span class="keyword">for</span> 循环变量的初始化;循环条件;循环变量迭代&#123;</span><br><span class="line">    循环操作(语句)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**************2.********************/</span></span><br><span class="line">j:=<span class="number">1</span><span class="comment">//循环变量初始化</span></span><br><span class="line"><span class="keyword">for</span> 循环判断条件&#123;</span><br><span class="line">    循环体</span><br><span class="line">    j++<span class="comment">//循环变量迭代</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**************3.********************/</span></span><br><span class="line"><span class="keyword">for</span>&#123;</span><br><span class="line">    循环体</span><br><span class="line">&#125;#死循环，需要配合<span class="keyword">break</span>语句使用</span><br><span class="line"><span class="comment">/*********************************/</span></span><br><span class="line">#循环四要素</span><br><span class="line">#<span class="number">1.</span>循环变量初始化</span><br><span class="line">#<span class="number">2.</span>循环条件</span><br><span class="line">#<span class="number">3.</span>循环操作(语句)，循环体</span><br><span class="line">#<span class="number">4.</span>循环变量迭代</span><br></pre></td></tr></table></figure>
+
+<p><strong>for循环执行的顺序说明</strong> </p>
+<ol>
+<li>执行循环变量初始化</li>
+<li>执行循环条件</li>
+<li>如果条件为真，则执行循环体</li>
+<li>执行循环变量迭代</li>
+<li>继续执行2，3，4，直到循环条件为假(false)，退出for循环</li>
+</ol>
+<p><strong>for循环的细节与注意事项</strong> </p>
+ <figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//for-range遍历字符串，数组</span></span><br><span class="line"><span class="comment">/***************传统方法********************/</span></span><br><span class="line"><span class="keyword">var</span> str <span class="keyword">string</span> = <span class="string">"hello,world!"</span></span><br><span class="line"><span class="keyword">for</span> i:=<span class="number">0</span>;i&lt;<span class="built_in">len</span>(str);i++;&#123;</span><br><span class="line">    fmt.printf(<span class="string">"%c\n"</span>,str[i])</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//当出现汉字是会出现乱码，汉字在utf-8里占3个字节，而读取则是一个字节</span></span><br><span class="line"><span class="comment">/****************4.for-range*****************/</span></span><br><span class="line">str = <span class="string">"hello,world!"</span></span><br><span class="line"><span class="keyword">for</span> index,val := <span class="keyword">range</span> str &#123;</span><br><span class="line">    fmt.printf(<span class="string">"index=%d,val=%c\n"</span>,index,val)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//当存在汉字时，不会出现乱码</span></span><br><span class="line"><span class="comment">//for-range遍历使用的是字符的方式遍历</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="while与do-while的实现"><a href="#while与do-while的实现" class="headerlink" title="while与do while的实现"></a>while与do while的实现</h2><p><strong>Golang里没有while和do while语法</strong> </p>
+<p><strong>while循环的实现</strong> </p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">循环变量初始化</span><br><span class="line"><span class="keyword">for</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> 循环条件表达式&#123;</span><br><span class="line">        <span class="keyword">break</span><span class="comment">//跳出for循环</span></span><br><span class="line">    &#125;</span><br><span class="line">    循环体</span><br><span class="line">    循环变量迭代</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>do while 循环的实现</strong> </p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">循环变量初始化</span><br><span class="line"><span class="keyword">for</span>&#123;</span><br><span class="line">    循环体</span><br><span class="line">    循环变量迭代</span><br><span class="line">    <span class="keyword">if</span> 循环条件表达式&#123;</span><br><span class="line">        <span class="keyword">break</span> <span class="comment">//跳出for循环【结束for循环】</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//至少执行一次</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="跳转语句"><a href="#跳转语句" class="headerlink" title="跳转语句"></a>跳转语句</h1><h2 id="break跳转语句"><a href="#break跳转语句" class="headerlink" title="break跳转语句"></a>break跳转语句</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line"><span class="comment">//break语句用于终止某个语句块的执行，用于中断当前for循环或跳出switch语句。</span></span><br><span class="line">&#123;</span><br><span class="line">    ......</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>break默认跳出最近的for循环</li>
+<li>break后面可以指定标签，跳出标签对应的for循环【可以配合标签使用】</li>
+</ol>
+<h2 id="continue跳转语句"><a href="#continue跳转语句" class="headerlink" title="continue跳转语句"></a>continue跳转语句</h2><ol>
+<li>continue语句用于结束本次循环，继续执行下一次循环。</li>
+<li>continue可以使用标签跳出</li>
+</ol>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">&#123;</span><br><span class="line">    ......</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="goto跳转语句"><a href="#goto跳转语句" class="headerlink" title="goto跳转语句"></a>goto跳转语句</h2><p>跳转到标签所在代码处，不再执行goto后面的代码</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line"><span class="keyword">goto</span> label</span><br><span class="line">......</span><br><span class="line">label:statement</span><br></pre></td></tr></table></figure>
+
+<h2 id="return跳转语句"><a href="#return跳转语句" class="headerlink" title="return跳转语句"></a>return跳转语句</h2><p>跳出所在的方法或者函数</p>
 ]]></content>
       <categories>
         <category>go</category>
@@ -1195,67 +1233,9 @@
       </categories>
   </entry>
   <entry>
-    <title>Go-for循环实现while-dowhile循环</title>
-    <url>/2020/10/08/Go-for%E5%BE%AA%E7%8E%AF%E5%AE%9E%E7%8E%B0while-dowhile%E5%BE%AA%E7%8E%AF/</url>
-    <content><![CDATA[<h1 id="while与do-while的实现"><a href="#while与do-while的实现" class="headerlink" title="while与do while的实现"></a>while与do while的实现</h1><p><strong>Golang里没有while和do while语法</strong> </p>
-<p><strong><em>while循环的实现</em></strong> </p>
-<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">循环变量初始化</span><br><span class="line"><span class="keyword">for</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> 循环条件表达式&#123;</span><br><span class="line">        <span class="keyword">break</span><span class="comment">//跳出for循环</span></span><br><span class="line">    &#125;</span><br><span class="line">    循环体</span><br><span class="line">    循环变量迭代</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong><em>do while 循环的实现</em></strong> </p>
-<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">循环变量初始化</span><br><span class="line"><span class="keyword">for</span>&#123;</span><br><span class="line">    循环体</span><br><span class="line">    循环变量迭代</span><br><span class="line">    <span class="keyword">if</span> 循环条件表达式&#123;</span><br><span class="line">        <span class="keyword">break</span> <span class="comment">//跳出for循环【结束for循环】</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//至少执行一次</span></span><br></pre></td></tr></table></figure>
-
+    <title>将博客搬至CSDN</title>
+    <url>/2020/10/04/%E5%B0%86%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%87%B3CSDN/</url>
+    <content><![CDATA[<p>将博客搬至CSDN</p>
 ]]></content>
-      <categories>
-        <category>go</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Go-跳转语句</title>
-    <url>/2020/10/08/Go-%E8%B7%B3%E8%BD%AC%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<h1 id="跳转语句"><a href="#跳转语句" class="headerlink" title="跳转语句"></a>跳转语句</h1><h2 id="break跳转语句"><a href="#break跳转语句" class="headerlink" title="break跳转语句"></a>break跳转语句</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line"><span class="comment">//break语句用于终止某个语句块的执行，用于中断当前for循环或跳出switch语句。</span></span><br><span class="line">&#123;</span><br><span class="line">    ......</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>break默认跳出最近的for循环</li>
-<li>break后面可以指定标签，跳出标签对应的for循环【可以配合标签使用】</li>
-</ol>
-<h2 id="continue跳转语句"><a href="#continue跳转语句" class="headerlink" title="continue跳转语句"></a>continue跳转语句</h2><ol>
-<li>continue语句用于结束本次循环，继续执行下一次循环。</li>
-<li>continue可以使用标签跳出</li>
-</ol>
-<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">&#123;</span><br><span class="line">    ......</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="goto跳转语句"><a href="#goto跳转语句" class="headerlink" title="goto跳转语句"></a>goto跳转语句</h2><p>跳转到标签所在代码处，不再执行goto后面的代码</p>
-<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line"><span class="keyword">goto</span> label</span><br><span class="line">......</span><br><span class="line">label:statement</span><br></pre></td></tr></table></figure>
-
-<h2 id="return跳转语句"><a href="#return跳转语句" class="headerlink" title="return跳转语句"></a>return跳转语句</h2><p>跳出所在的方法或者函数</p>
-]]></content>
-      <categories>
-        <category>go</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Go-for循环</title>
-    <url>/2020/10/08/Go-for%E5%BE%AA%E7%8E%AF/</url>
-    <content><![CDATA[<h1 id="for-循环控制"><a href="#for-循环控制" class="headerlink" title="for 循环控制"></a>for 循环控制</h1><figure class="highlight go"><table><tr><td class="code"><pre><span class="line">#语法 </span><br><span class="line"><span class="comment">/**************1.********************/</span></span><br><span class="line"><span class="keyword">for</span> 循环变量的初始化;循环条件;循环变量迭代&#123;</span><br><span class="line">    循环操作(语句)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**************2.********************/</span></span><br><span class="line">j:=<span class="number">1</span><span class="comment">//循环变量初始化</span></span><br><span class="line"><span class="keyword">for</span> 循环判断条件&#123;</span><br><span class="line">    循环体</span><br><span class="line">    j++<span class="comment">//循环变量迭代</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**************3.********************/</span></span><br><span class="line"><span class="keyword">for</span>&#123;</span><br><span class="line">    循环体</span><br><span class="line">&#125;#死循环，需要配合<span class="keyword">break</span>语句使用</span><br><span class="line"><span class="comment">/*********************************/</span></span><br><span class="line">#循环四要素</span><br><span class="line">#<span class="number">1.</span>循环变量初始化</span><br><span class="line">#<span class="number">2.</span>循环条件</span><br><span class="line">#<span class="number">3.</span>循环操作(语句)，循环体</span><br><span class="line">#<span class="number">4.</span>循环变量迭代</span><br></pre></td></tr></table></figure>
-
-<p><strong>for循环执行的顺序说明</strong> </p>
-<ol>
-<li>执行循环变量初始化</li>
-<li>执行循环条件</li>
-<li>如果条件为真，则执行循环体</li>
-<li>执行循环变量迭代</li>
-<li>继续执行2，3，4，直到循环条件为假(false)，退出for循环</li>
-</ol>
-<p><strong>for循环的细节与 注意事项</strong> </p>
-<ol>
-<li>```go<br>//for-range遍历字符串，数组<br>/<strong><strong><strong>***</strong></strong></strong>传统方法<strong><strong><strong><strong>****</strong></strong></strong></strong>/<br>var str string = “hello,world!”<br>for i:=0;i&lt;len(str);i++;{<pre><code>fmt.printf(&quot;%c\n&quot;,str[i])</code></pre>}<br>//当出现汉字是会出现乱码，汉字在utf-8里占3个字节，而读取则是一个字节<br>/<strong><strong><strong>****</strong></strong></strong>4.for-range<strong><strong><strong>*****</strong></strong></strong>/<br>str = “hello,world!”<br>for index,val := range str {<pre><code>fmt.printf(&quot;index=%d,val=%c\n&quot;,index,val)</code></pre>}<br>//当存在汉字时，不会出现乱码<br>//for-range遍历使用的是字符的方式遍历<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## while与do while的实现</span><br><span class="line"></span><br><span class="line">**Golang里没有while和do while语法** </span><br><span class="line"></span><br><span class="line">***while循环的实现*** </span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;go</span><br><span class="line">&#x2F;&#x2F;语法</span><br><span class="line">循环变量初始化</span><br><span class="line">for&#123;</span><br><span class="line">    if 循环条件表达式&#123;</span><br><span class="line">        break&#x2F;&#x2F;跳出for循环</span><br><span class="line">    &#125;</span><br><span class="line">    循环体</span><br><span class="line">    循环变量迭代</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p><strong><em>do while 循环的实现</em></strong> </p>
-<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">循环变量初始化</span><br><span class="line"><span class="keyword">for</span>&#123;</span><br><span class="line">    循环体</span><br><span class="line">    循环变量迭代</span><br><span class="line">    <span class="keyword">if</span> 循环条件表达式&#123;</span><br><span class="line">        <span class="keyword">break</span> <span class="comment">//跳出for循环【结束for循环】</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//至少执行一次</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>go</category>
-      </categories>
   </entry>
 </search>
