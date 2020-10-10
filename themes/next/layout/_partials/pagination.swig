@@ -2,8 +2,8 @@
   <nav class="pagination">
     {{
       paginator({
-        prev_text: '>>',
-        next_text: '<<',
+        prev_text: '<<',
+        next_text: '>>',
         mid_size: 1
       })
     }}
