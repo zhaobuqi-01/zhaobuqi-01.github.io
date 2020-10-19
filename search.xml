@@ -1238,4 +1238,55 @@
     <content><![CDATA[<p>将博客搬至CSDN</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>go-数组的注意事项</title>
+    <url>/2020/10/17/Go-%E6%95%B0%E7%BB%84%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+    <content><![CDATA[<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ol>
+<li>go的数组属<strong>值类型</strong> ，在默认情况下是值传递，因此会进行值拷贝。数组间不会相互影响</li>
+<li>如果想在其他数组里修改数组的值可以是指针来进行修改</li>
+</ol>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Go-函数</title>
+    <url>/2020/10/10/Go-%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>go-冒泡排序</title>
+    <url>/2020/10/18/go-%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;*冒泡排序的规则</span><br><span class="line">1.一共会经过arr。lengrh-1次的轮数比较，每一轮会确定一个数的位置</span><br><span class="line">2.每一轮的比较次数在逐渐减少</span><br><span class="line">3.当发现前面的一个数比后面的一个数大的时候，就进行了交换</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>go-切片</title>
+    <url>/2020/10/17/go-%E5%88%87%E7%89%87/</url>
+    <content><![CDATA[<h1 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h1><p><strong>基本语法</strong></p>
+<p>var 切片名 []类型</p>
+<ol>
+<li>切片是引用类型</li>
+</ol>
+<p><strong>切片的使用</strong> </p>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>数组复杂使用--数组反转</title>
+    <url>/2020/10/17/%E6%95%B0%E7%BB%84%E5%A4%8D%E6%9D%82%E4%BD%BF%E7%94%A8-%E6%95%B0%E7%BB%84%E5%8F%8D%E8%BD%AC/</url>
+    <content><![CDATA[<h1 id="数组反转"><a href="#数组反转" class="headerlink" title="数组反转"></a>数组反转</h1><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//使用临时变量进行交换，最后一个和第一个进行交换，交换次数为数组长度的一半即len(intArr3)/2</span></span><br><span class="line">temp :=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i=<span class="number">0</span>;i&lt;<span class="built_in">len</span>(intArrr3)/<span class="number">2</span>;i++&#123;</span><br><span class="line">    temp=intArr3[<span class="built_in">len</span>(intArr3)<span class="number">-1</span>-i]</span><br><span class="line">    intArr3[<span class="built_in">len</span>(intArr3)<span class="number">-1</span>-i]=intArr3[i]</span><br><span class="line">    intArr3[i]=temp</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
 </search>
