@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2020-10-18T08:39:09.731Z</updated>
+  <updated>2020-10-24T08:49:21.535Z</updated>
   <id>https://zhaobuqi-01.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>矩阵的运算</title>
+    <link href="https://zhaobuqi-01.github.io/2020/10/24/%E7%9F%A9%E9%98%B5%E7%9A%84%E8%BF%90%E7%AE%97/"/>
+    <id>https://zhaobuqi-01.github.io/2020/10/24/%E7%9F%A9%E9%98%B5%E7%9A%84%E8%BF%90%E7%AE%97/</id>
+    <published>2020-10-24T08:48:24.000Z</published>
+    <updated>2020-10-24T08:49:21.535Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="https://zhaobuqi-01.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>go-冒泡排序</title>
@@ -431,28 +453,6 @@
       
       
         &lt;h1 id=&quot;7-2-jmu-python-韩信点兵-10分&quot;&gt;&lt;a href=&quot;#7-2-jmu-python-韩信点兵-10分&quot; class=&quot;headerlink&quot; title=&quot;7-2 jmu-python-韩信点兵 (10分)&quot;&gt;&lt;/a&gt;7-2 jmu-python-
-      
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>jmu-python-统计成绩</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E7%BB%9F%E8%AE%A1%E6%88%90%E7%BB%A9/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/28/jmu-python-%E7%BB%9F%E8%AE%A1%E6%88%90%E7%BB%A9/</id>
-    <published>2020-09-28T15:30:21.000Z</published>
-    <updated>2020-09-28T15:31:19.175Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;7-3-jmu-python-统计成绩-15分&quot;&gt;&lt;a href=&quot;#7-3-jmu-python-统计成绩-15分&quot; class=&quot;headerlink&quot; title=&quot;7-3 jmu-python-统计成绩 (15分)&quot;&gt;&lt;/a&gt;7-3 jmu-python-
       
     
     </summary>
