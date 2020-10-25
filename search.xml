@@ -1299,4 +1299,41 @@
         <category>数据结构</category>
       </categories>
   </entry>
+  <entry>
+    <title>map</title>
+    <url>/2020/10/24/map/</url>
+    <content><![CDATA[<h1 id="map"><a href="#map" class="headerlink" title="map"></a>map</h1><h2 id="map-的基本介绍"><a href="#map-的基本介绍" class="headerlink" title="map 的基本介绍"></a>map 的基本介绍</h2><p><code>var map变量名 map[keeytype]valuetype</code></p>
+<p>keytype 不可以是<code>slice map function</code> ，因为不可以用<code>==</code>进行判断</p>
+<p><code>make用来分配空间</code></p>
+<p><strong>注意</strong></p>
+<ol>
+<li>使用前需要使用make对map进行空间的分配</li>
+<li>map的key是不可以重复的</li>
+</ol>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>面向对象</title>
+    <url>/2020/10/25/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<h1 id="面向对象（接口）"><a href="#面向对象（接口）" class="headerlink" title="面向对象（接口）"></a>面向对象（接口）</h1><h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line"><span class="keyword">type</span> 结构体变量名 <span class="keyword">struct</span> &#123;</span><br><span class="line">    (变量名) (变量类型) </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//结构体里的变量不赋值的情况下为默认值</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>结构体的使用</strong></p>
+<p><em>1.创建结构体</em> </p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">)</span><br><span class="line"><span class="keyword">type</span>  Person <span class="keyword">struct</span> &#123;</span><br><span class="line">    Name <span class="keyword">string</span></span><br><span class="line">    Age <span class="keyword">int</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//方法一</span></span><br><span class="line">    <span class="keyword">var</span> Tom Person</span><br><span class="line">    <span class="comment">//方法二</span></span><br><span class="line">    <span class="keyword">var</span> Tom := Person&#123;对变量进行赋值&#125;</span><br><span class="line">    <span class="comment">//方法三</span></span><br><span class="line">    <span class="keyword">var</span> Tom *Person = <span class="built_in">new</span>(Person)</span><br><span class="line">    <span class="comment">//Tom是一个指针</span></span><br><span class="line">    <span class="comment">//赋值</span></span><br><span class="line">    (*Tom).Name = <span class="string">"smith"</span> <span class="comment">//&#123;(*Tom).Name = "smith" &#125; == &#123;Tom.Name = "smith"&#125; </span></span><br><span class="line">    (*Tom),Age = <span class="number">10</span></span><br><span class="line">    <span class="comment">//重复赋值会对原有的值进行覆盖</span></span><br><span class="line">    <span class="comment">//方法四</span></span><br><span class="line">    <span class="keyword">var</span> person *Person = &amp;Person&#123;可以在创建的时候对结构体进行赋初始值&#125;</span><br><span class="line">    <span class="comment">//标准赋值 (*person),Name = "ss"</span></span><br><span class="line">    <span class="comment">//person.Name = "hello"</span></span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>方法3和方法4 返回的是结构体指针</li>
+<li>结构体指针的标准形式应该是：<code>(*结构体指针).字段名</code>  </li>
+</ol>
+<p><strong><code>.</code> 的运算级比   <code>*</code>  高</strong>  </p>
+<p> <strong>结构体的内存分配</strong> </p>
+<p>结构体里的字段的地址是连续的</p>
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
 </search>
