@@ -1336,4 +1336,17 @@
         <category>go</category>
       </categories>
   </entry>
+  <entry>
+    <title>方法</title>
+    <url>/2020/10/26/%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="方法的声明与调用"><a href="#方法的声明与调用" class="headerlink" title="方法的声明与调用"></a>方法的声明与调用</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> A <span class="keyword">struct</span>&#123;</span><br><span class="line">    Num <span class="keyword">int</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(a A)</span><span class="title">test</span><span class="params">()</span></span>&#123;&#125;表示A结构体有一种方法 </span><br><span class="line"><span class="comment">//给A联系绑定一个方法</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>参数传递是值传递，是值拷贝，不是传递地址因此在方法对传递的参数进行修改不会对主函数里的值产生改变</strong></p>
+<h2 id="方法快速入门"><a href="#方法快速入门" class="headerlink" title="方法快速入门"></a>方法快速入门</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">speak</span><span class="params">()</span></span>&#123;</span><br><span class="line">    fmt.Println(p，Name<span class="string">"是一个好人"</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">sumadd</span><span class="params">()</span></span>&#123;</span><br><span class="line">    res:=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span>;i&lt;=<span class="number">1000</span>;i++&#123;</span><br><span class="line">        res+=i</span><br><span class="line">    &#125;</span><br><span class="line">    fmt.Printf(<span class="string">"%d"</span>,res)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">sumadd2</span><span class="params">(n <span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">	 res:=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span>;i&lt;=n;i++&#123;</span><br><span class="line">        res+=i</span><br><span class="line">    &#125;</span><br><span class="line">    fmt.Printf(<span class="string">"%d"</span>,res)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">sum</span><span class="params">(n1 <span class="keyword">int</span> , n2  <span class="keyword">int</span>)</span><span class="params">(<span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> n1+n2</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="方法的调用与传参机制原理"><a href="#方法的调用与传参机制原理" class="headerlink" title="方法的调用与传参机制原理"></a>方法的调用与传参机制原理</h2>]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
 </search>

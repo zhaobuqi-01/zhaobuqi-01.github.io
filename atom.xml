@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2020-10-25T13:50:22.517Z</updated>
+  <updated>2020-10-26T12:42:30.366Z</updated>
   <id>https://zhaobuqi-01.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>方法</title>
+    <link href="https://zhaobuqi-01.github.io/2020/10/26/%E6%96%B9%E6%B3%95/"/>
+    <id>https://zhaobuqi-01.github.io/2020/10/26/%E6%96%B9%E6%B3%95/</id>
+    <published>2020-10-26T11:36:21.000Z</published>
+    <updated>2020-10-26T12:42:30.366Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;方法&quot;&gt;&lt;a href=&quot;#方法&quot; class=&quot;headerlink&quot; title=&quot;方法&quot;&gt;&lt;/a&gt;方法&lt;/h1&gt;&lt;h2 id=&quot;方法的声明与调用&quot;&gt;&lt;a href=&quot;#方法的声明与调用&quot; class=&quot;headerlink&quot; title=&quot;方法的声明与调用&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>面向对象</title>
@@ -437,28 +459,6 @@
     
     
       <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>约瑟夫环</title>
-    <link href="https://zhaobuqi-01.github.io/2020/09/28/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/"/>
-    <id>https://zhaobuqi-01.github.io/2020/09/28/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF/</id>
-    <published>2020-09-28T15:36:07.000Z</published>
-    <updated>2020-09-28T15:36:55.344Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;7-1-约瑟夫环（Josephus）问题-by-Yan-100分&quot;&gt;&lt;a href=&quot;#7-1-约瑟夫环（Josephus）问题-by-Yan-100分&quot; class=&quot;headerlink&quot; title=&quot;7-1 约瑟夫环（Josephus）问题(by Yan)
-      
-    
-    </summary>
-    
-    
-      <category term="数据结构" scheme="https://zhaobuqi-01.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
   </entry>
