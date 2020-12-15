@@ -1316,9 +1316,62 @@
       </categories>
   </entry>
   <entry>
-    <title>面向对象</title>
-    <url>/2020/10/25/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</url>
-    <content><![CDATA[<h1 id="面向对象（接口）"><a href="#面向对象（接口）" class="headerlink" title="面向对象（接口）"></a>面向对象（接口）</h1><h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line"><span class="keyword">type</span> 结构体变量名 <span class="keyword">struct</span> &#123;</span><br><span class="line">    (变量名) (变量类型) </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//结构体里的变量不赋值的情况下为默认值</span></span><br></pre></td></tr></table></figure>
+    <title>方法</title>
+    <url>/2020/10/26/%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="方法的声明与调用"><a href="#方法的声明与调用" class="headerlink" title="方法的声明与调用"></a>方法的声明与调用</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> A <span class="keyword">struct</span>&#123;</span><br><span class="line">    Num <span class="keyword">int</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(a A)</span><span class="title">test</span><span class="params">()</span></span>&#123;&#125;表示A结构体有一种方法 </span><br><span class="line"><span class="comment">//给A联系绑定一个方法</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>参数传递是值传递，是值拷贝，不是传递地址因此在方法对传递的参数进行修改不会对主函数里的值产生改变</strong></p>
+<h2 id="方法快速入门"><a href="#方法快速入门" class="headerlink" title="方法快速入门"></a>方法快速入门</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">speak</span><span class="params">()</span></span>&#123;</span><br><span class="line">    fmt.Println(p，Name<span class="string">"是一个好人"</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">sumadd</span><span class="params">()</span></span>&#123;</span><br><span class="line">    res:=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span>;i&lt;=<span class="number">1000</span>;i++&#123;</span><br><span class="line">        res+=i</span><br><span class="line">    &#125;</span><br><span class="line">    fmt.Printf(<span class="string">"%d"</span>,res)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">sumadd2</span><span class="params">(n <span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">	 res:=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span>;i&lt;=n;i++&#123;</span><br><span class="line">        res+=i</span><br><span class="line">    &#125;</span><br><span class="line">    fmt.Printf(<span class="string">"%d"</span>,res)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">sum</span><span class="params">(n1 <span class="keyword">int</span> , n2  <span class="keyword">int</span>)</span><span class="params">(<span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> n1+n2</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="方法的调用与传参机制原理"><a href="#方法的调用与传参机制原理" class="headerlink" title="方法的调用与传参机制原理"></a>方法的调用与传参机制原理</h2>]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>python-format函数格式化</title>
+    <url>/2020/11/05/python-format%E5%87%BD%E6%95%B0%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>接口的应用</title>
+    <url>/2020/11/07/%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="接口的最佳实践"><a href="#接口的最佳实践" class="headerlink" title="接口的最佳实践"></a>接口的最佳实践</h1><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span>(</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">    <span class="string">"sort"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> intSlice = []<span class="keyword">int</span>&#123;<span class="number">0</span>,<span class="number">-1</span>,<span class="number">10</span>,<span class="number">7</span>,<span class="number">90</span>&#125;</span><br><span class="line">    <span class="comment">//切片是引用类型</span></span><br><span class="line">    sort.Ints(intSlice)</span><br><span class="line">    fmt.Println(intSlice)</span><br><span class="line">    <span class="comment">//对结构体切片进行排序</span></span><br><span class="line">    <span class="comment">//sort.Sort</span></span><br><span class="line">    <span class="comment">//func Sort(data Interface)</span></span><br><span class="line">     	jhgfghjkjh</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>接口</title>
+    <url>/2020/10/31/%E6%8E%A5%E5%8F%A3/</url>
+    <content><![CDATA[<h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><h2 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> Usb <span class="keyword">interface</span>&#123;</span><br><span class="line">    Start()</span><br><span class="line">    Stop()</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">type</span> Phone <span class="keyword">struct</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Phone)</span><span class="title">Start</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Phone)</span><span class="title">Stop</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">type</span> Camera <span class="keyword">struct</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(c Camea)</span> <span class="title">Start</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(c Camera)</span> <span class="title">Stop</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">type</span> Competer <span class="keyword">struct</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(com Competer)</span><span class="title">Com</span><span class="params">(usb Usb)</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">mian</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    c:=Phone&#123;&#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> 接口名 <span class="keyword">interface</span>&#123;</span><br><span class="line">    method1(参数列表) 返回值列表</span><br><span class="line">    method2(参数列表) 返回值列表</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>小结说明</strong> </p>
+<ol>
+<li>接口里的所有方法都没有方法体，即接口的方法都市没有实现的方法。</li>
+<li>go中的接口不需要显式的实现。只要一个变量，含有接口类型中的所有方法，那么这个变量就实现这个接口。</li>
+</ol>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>线性表</title>
+    <url>/2020/11/07/%E7%BA%BF%E6%80%A7%E8%A1%A8/</url>
+    <content><![CDATA[<h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1>]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>结构体</title>
+    <url>/2020/10/25/%E7%BB%93%E6%9E%84%E4%BD%93/</url>
+    <content><![CDATA[<h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line"><span class="keyword">type</span> 结构体变量名 <span class="keyword">struct</span> &#123;</span><br><span class="line">    (变量名) (变量类型) </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//结构体里的变量不赋值的情况下为默认值</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>结构体的使用</strong></p>
 <p><em>1.创建结构体</em> </p>
@@ -1337,14 +1390,75 @@
       </categories>
   </entry>
   <entry>
-    <title>方法</title>
-    <url>/2020/10/26/%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h2 id="方法的声明与调用"><a href="#方法的声明与调用" class="headerlink" title="方法的声明与调用"></a>方法的声明与调用</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> A <span class="keyword">struct</span>&#123;</span><br><span class="line">    Num <span class="keyword">int</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(a A)</span><span class="title">test</span><span class="params">()</span></span>&#123;&#125;表示A结构体有一种方法 </span><br><span class="line"><span class="comment">//给A联系绑定一个方法</span></span><br></pre></td></tr></table></figure>
+    <title>题解</title>
+    <url>/2020/12/15/%E9%A2%98%E8%A7%A3/</url>
+    <content><![CDATA[<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>输入一个不小于 100 且小于 1000，同时包括小数点后一位的一个浮点数，例如123.4，要求把这个数字翻转过来，变成4.321并输出。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>无</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>无</p>
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><p><strong>输入 #1</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">123.4</span><br></pre></td></tr></table></figure>
 
-<p><strong>参数传递是值传递，是值拷贝，不是传递地址因此在方法对传递的参数进行修改不会对主函数里的值产生改变</strong></p>
-<h2 id="方法快速入门"><a href="#方法快速入门" class="headerlink" title="方法快速入门"></a>方法快速入门</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">speak</span><span class="params">()</span></span>&#123;</span><br><span class="line">    fmt.Println(p，Name<span class="string">"是一个好人"</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">sumadd</span><span class="params">()</span></span>&#123;</span><br><span class="line">    res:=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span>;i&lt;=<span class="number">1000</span>;i++&#123;</span><br><span class="line">        res+=i</span><br><span class="line">    &#125;</span><br><span class="line">    fmt.Printf(<span class="string">"%d"</span>,res)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">sumadd2</span><span class="params">(n <span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">	 res:=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span>;i&lt;=n;i++&#123;</span><br><span class="line">        res+=i</span><br><span class="line">    &#125;</span><br><span class="line">    fmt.Printf(<span class="string">"%d"</span>,res)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p Person)</span> <span class="title">sum</span><span class="params">(n1 <span class="keyword">int</span> , n2  <span class="keyword">int</span>)</span><span class="params">(<span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> n1+n2</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>输出 #1</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">4.321</span><br></pre></td></tr></table></figure>
 
-<h2 id="方法的调用与传参机制原理"><a href="#方法的调用与传参机制原理" class="headerlink" title="方法的调用与传参机制原理"></a>方法的调用与传参机制原理</h2>]]></content>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> a,b,c,d;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%c%c%c.%c"</span>,&amp;a,&amp;b,&amp;c,&amp;d);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%c.%c%c%c\n"</span>,d,c,b,a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h2><p>给出一个正整数 n(n\le 100)<em>n</em>(<em>n</em>≤100)，然后对这个数字一直进行下面的操作：如果这个数字是奇数，那么将其乘 3 再加 1，否则除以 2。经过若干次循环后，最终都会回到 1。经过验证很大的数字（7\times10^{11}7×1011）都可以按照这样的方式比变成 1，所以被称为“冰雹猜想”。例如当 n<em>n</em> 是 20，变化的过程是 [20, 10, 5, 16, 8, 4, 2, 1]。</p>
+<p>根据给定的数字，验证这个猜想，并从最后的 1 开始，倒序输出整个变化序列。</p>
+<h2 id="输入格式-1"><a href="#输入格式-1" class="headerlink" title="输入格式"></a>输入格式</h2><p>无</p>
+<h2 id="输出格式-1"><a href="#输出格式-1" class="headerlink" title="输出格式"></a>输出格式</h2><p>无</p>
+<h2 id="输入输出样例-1"><a href="#输入输出样例-1" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><p><strong>输入 #1</strong>复制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">20</span><br></pre></td></tr></table></figure>
+
+<p><strong>输出 #1</strong>复制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1 2 4 8 16 5 10 20</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> <span class="built_in">print</span>[<span class="number">1000</span>];</span><br><span class="line">    <span class="keyword">int</span> n, count = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">    <span class="built_in">print</span>[count] = n;</span><br><span class="line">    count++;</span><br><span class="line">    <span class="keyword">if</span> (n &gt;= <span class="number">0</span> &amp;&amp; n &lt;= <span class="number">100</span>) &#123;</span><br><span class="line">        <span class="keyword">for</span> (; n != <span class="number">1</span>;) &#123;</span><br><span class="line">            <span class="keyword">if</span> (n % <span class="number">2</span> != <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">                sum = n * <span class="number">3</span> + <span class="number">1</span>;</span><br><span class="line">                n = n * <span class="number">3</span> + <span class="number">1</span>;</span><br><span class="line">                <span class="built_in">print</span>[count] = sum;</span><br><span class="line">                count++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">                sum = n / <span class="number">2</span>;</span><br><span class="line">                n = n / <span class="number">2</span>;</span><br><span class="line">                <span class="built_in">print</span>[count] = sum;</span><br><span class="line">                count++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = count - <span class="number">1</span>; i &gt; <span class="number">1</span>; i--) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>, <span class="built_in">print</span>[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>, <span class="built_in">print</span>[<span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h2><p>一般的文本编辑器都有查找单词的功能，该功能可以快速定位特定单词在文章中的位置，有的还能统计出特定单词在文章中出现的次数。</p>
+<p>现在，请你编程实现这一功能，具体要求是：给定一个单词，请你输出它在给定的文章中出现的次数和第一次出现的位置。注意：匹配单词时，不区分大小写，但要求完全匹配，即给定单词必须与文章中的某一独立单词在不区分大小写的情况下完全相同（参见样例1 ），如果给定单词仅是文章中某一单词的一部分则不算匹配（参见样例2 ）。</p>
+<h2 id="输入格式-2"><a href="#输入格式-2" class="headerlink" title="输入格式"></a>输入格式</h2><p>共22行。</p>
+<p>第11行为一个字符串，其中只含字母，表示给定单词；</p>
+<p>第22行为一个字符串，其中只可能包含字母和空格，表示给定的文章。</p>
+<h2 id="输出格式-2"><a href="#输出格式-2" class="headerlink" title="输出格式"></a>输出格式</h2><p>一行，如果在文章中找到给定单词则输出两个整数，两个整数之间用一个空格隔开，分别是单词在文章中出现的次数和第一次出现的位置（即在文章中第一次出现时，单词首字母在文章中的位置，位置从00 开始）；如果单词在文章中没有出现，则直接输出一个整数-1−1。</p>
+<h2 id="输入输出样例-2"><a href="#输入输出样例-2" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><p><strong>输入 #1</strong>复制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">To</span><br><span class="line">to be or not to be is a question</span><br></pre></td></tr></table></figure>
+
+<p><strong>输出 #1</strong>复制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2 0</span><br></pre></td></tr></table></figure>
+
+<p><strong>输入 #2</strong>复制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">to</span><br><span class="line">Did the Ottoman Empire lose its power at that time</span><br></pre></td></tr></table></figure>
+
+<p><strong>输出 #2</strong>复制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-1</span><br></pre></td></tr></table></figure>
+
+<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h2><p>数据范围</p>
+<p>1≤1≤单词长度≤10≤10。</p>
+<p>1≤1≤文章长度≤1,000,000≤1,000,000。</p>
+<p>noip2011普及组第2题</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">char</span> a[<span class="number">11</span>], b[<span class="number">1000001</span>];</span><br><span class="line">    gets(a);</span><br><span class="line">    gets(b);</span><br><span class="line">    <span class="built_in">strcat</span>(a, <span class="string">" "</span>);</span><br><span class="line">    <span class="built_in">strcat</span>(b, <span class="string">" "</span>);<span class="comment">//在ab后各加一个" "，减小配对的难度</span></span><br><span class="line">    <span class="keyword">int</span> i, s, n = <span class="number">0</span>, l, j, ss = <span class="number">0</span>, k, rec;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; a[i] != <span class="string">'\0'</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (a[i] &gt;= <span class="string">'a'</span>)</span><br><span class="line">            a[i] -= <span class="string">'a'</span> - <span class="string">'A'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; b[i] != <span class="string">'\0'</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (b[i] &gt;= <span class="string">'a'</span>)</span><br><span class="line">            b[i] -= <span class="string">'a'</span> - <span class="string">'A'</span>;</span><br><span class="line">    &#125; <span class="comment">//统一ab的大小写</span></span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; b[i] != <span class="string">'\0'</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (b[i] == <span class="string">' '</span>) &#123;</span><br><span class="line">            s = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">for</span> (j = n, k = <span class="number">0</span>; j &lt;= i, a[k] != <span class="string">'\0'</span>; j++, k++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (b[j] == a[k]) &#123;</span><br><span class="line">                    s *= <span class="number">1</span>;<span class="comment">//用s来记录各个位能否对应，如果结果是1就正确，一位不对s就变成0</span></span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    s *= <span class="number">0</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (s == <span class="number">1</span>) &#123;</span><br><span class="line">                ss++; <span class="comment">//如果每次都对就增加符合的次数</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (ss == <span class="number">1</span> &amp;&amp; s == <span class="number">1</span>) &#123;</span><br><span class="line">                rec = n; <span class="comment">//记录第一次符合的位数</span></span><br><span class="line">            &#125;</span><br><span class="line">            n = i;</span><br><span class="line">            n++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (ss == <span class="number">0</span>) &#123;</span><br><span class="line">        ss = <span class="number">-1</span>;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d"</span>, ss);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ss &gt;= <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d %d"</span>, ss, rec);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>继承</title>
+    <url>/2020/10/31/%E7%BB%A7%E6%89%BF/</url>
+    <content><![CDATA[<h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><h2 id="继承的好处"><a href="#继承的好处" class="headerlink" title="继承的好处"></a>继承的好处</h2><p>继承可以减少代码的复用</p>
+<p>当多个结构体存在相同的属性(字段)和方法是，可以从这些结构体中抽象出结构体，在该结构体中定义这些相同的属性和方法。</p>
+<p>其他的结构体不需要重新定义这些属性（字段）和方法，只需要嵌套一个匿名结构体即可</p>
+<p><strong>在go中如果一个结构体嵌套了另一个匿名结构体，那么这个结构体可以直接访问匿名结构体的字段和方法，从而实现了继承特性</strong> </p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">type</span> Goods <span class="keyword">struct</span>&#123;</span><br><span class="line">    Name <span class="keyword">string</span></span><br><span class="line">    Price <span class="keyword">int</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">type</span> Book <span class="keyword">struct</span>&#123;</span><br><span class="line">    Goods <span class="comment">//嵌套匿名结构体Goods</span></span><br><span class="line">    Writer <span class="keyword">string</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+]]></content>
       <categories>
         <category>go</category>
       </categories>
