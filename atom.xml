@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2020-12-15T11:37:41.481Z</updated>
+  <updated>2021-01-03T15:11:24.054Z</updated>
   <id>https://zhaobuqi-01.github.io/</id>
   
   <author>
@@ -15,6 +15,72 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>交通咨询</title>
+    <link href="https://zhaobuqi-01.github.io/2021/01/03/%E4%BA%A4%E9%80%9A%E5%92%A8%E8%AF%A2/"/>
+    <id>https://zhaobuqi-01.github.io/2021/01/03/%E4%BA%A4%E9%80%9A%E5%92%A8%E8%AF%A2/</id>
+    <published>2021-01-03T15:10:40.000Z</published>
+    <updated>2021-01-03T15:11:24.054Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;main-c&quot;&gt;&lt;a href=&quot;#main-c&quot; class=&quot;headerlink&quot; title=&quot;main.c&quot;&gt;&lt;/a&gt;main.c&lt;/h1&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="https://zhaobuqi-01.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>交通咨询系统</title>
+    <link href="https://zhaobuqi-01.github.io/2021/01/03/%E4%BA%A4%E9%80%9A%E5%92%A8%E8%AF%A2%E7%B3%BB%E7%BB%9F/"/>
+    <id>https://zhaobuqi-01.github.io/2021/01/03/%E4%BA%A4%E9%80%9A%E5%92%A8%E8%AF%A2%E7%B3%BB%E7%BB%9F/</id>
+    <published>2021-01-03T15:03:49.000Z</published>
+    <updated>2021-01-03T15:08:22.313Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;交通咨询系统&quot;&gt;&lt;a href=&quot;#交通咨询系统&quot; class=&quot;headerlink&quot; title=&quot;交通咨询系统&quot;&gt;&lt;/a&gt;交通咨询系统&lt;/h1&gt;&lt;h2 id=&quot;main-c&quot;&gt;&lt;a href=&quot;#main-c&quot; class=&quot;headerlink&quot; titl
+      
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="https://zhaobuqi-01.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python复习</title>
+    <link href="https://zhaobuqi-01.github.io/2021/01/02/python%E5%A4%8D%E4%B9%A0/"/>
+    <id>https://zhaobuqi-01.github.io/2021/01/02/python%E5%A4%8D%E4%B9%A0/</id>
+    <published>2021-01-02T07:34:32.000Z</published>
+    <updated>2021-01-02T13:25:43.445Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;python输入输出&quot;&gt;&lt;a href=&quot;#python输入输出&quot; class=&quot;headerlink&quot; title=&quot;python输入输出&quot;&gt;&lt;/a&gt;python输入输出&lt;/h1&gt;&lt;h2 id=&quot;输入&quot;&gt;&lt;a href=&quot;#输入&quot; class=&quot;headerli
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://zhaobuqi-01.github.io/categories/python/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>题解</title>
@@ -370,78 +436,6 @@
         &lt;p&gt;&lt;strong&gt;位运算符&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&amp;amp;&lt;/strong&gt;     按位与           两个都为1才为1&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;|&lt;/strong&gt;     按位或            只要有一个1就为1&lt;/p
-      
-    
-    </summary>
-    
-    
-      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>补码原码反码</title>
-    <link href="https://zhaobuqi-01.github.io/2020/10/05/%E8%A1%A5%E7%A0%81%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81/"/>
-    <id>https://zhaobuqi-01.github.io/2020/10/05/%E8%A1%A5%E7%A0%81%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81/</id>
-    <published>2020-10-05T10:01:08.000Z</published>
-    <updated>2020-10-05T10:09:34.200Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;原码-反码-补码&quot;&gt;&lt;a href=&quot;#原码-反码-补码&quot; class=&quot;headerlink&quot; title=&quot;原码 反码 补码&quot;&gt;&lt;/a&gt;原码 反码 补码&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;整数的原码，反码，补码都一样。&lt;/li&gt;
-&lt;li&gt;负数的反码=它的原码符号位不变
-      
-    
-    </summary>
-    
-    
-      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>逻辑运算符的注意事项与细节</title>
-    <link href="https://zhaobuqi-01.github.io/2020/10/04/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E7%BB%86%E8%8A%82/"/>
-    <id>https://zhaobuqi-01.github.io/2020/10/04/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E4%B8%8E%E7%BB%86%E8%8A%82/</id>
-    <published>2020-10-04T14:08:27.000Z</published>
-    <updated>2020-10-04T14:11:54.004Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; 也叫短路与，如果第一个条件为false,则第二个条件不会判断，最终结果为false。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;||&lt;/code&gt; 也叫短路或，如果第一个条件为true，则第二个条件不会判断，最终结果为true
-      
-    
-    </summary>
-    
-    
-      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>标识符的注意事项</title>
-    <link href="https://zhaobuqi-01.github.io/2020/10/04/%E6%A0%87%E8%AF%86%E7%AC%A6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    <id>https://zhaobuqi-01.github.io/2020/10/04/%E6%A0%87%E8%AF%86%E7%AC%A6%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
-    <published>2020-10-04T13:02:14.000Z</published>
-    <updated>2020-10-04T13:22:17.959Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;标识符命名注意事项&quot;&gt;&lt;a href=&quot;#标识符命名注意事项&quot; class=&quot;headerlink&quot; title=&quot;标识符命名注意事项&quot;&gt;&lt;/a&gt;标识符命名注意事项&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;包名与所在文件夹的名称保持一至。&lt;/li&gt;
-&lt;li&gt;变量名，函数名，常量
       
     
     </summary>
