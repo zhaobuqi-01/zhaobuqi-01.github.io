@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaobuqi-01.github.io/"/>
-  <updated>2021-01-03T15:11:24.054Z</updated>
+  <updated>2021-01-03T15:42:52.776Z</updated>
   <id>https://zhaobuqi-01.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Prim算法</title>
+    <link href="https://zhaobuqi-01.github.io/2021/01/03/Prim%E7%AE%97%E6%B3%95/"/>
+    <id>https://zhaobuqi-01.github.io/2021/01/03/Prim%E7%AE%97%E6%B3%95/</id>
+    <published>2021-01-03T15:16:29.000Z</published>
+    <updated>2021-01-03T15:42:52.776Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;算法思想&quot;&gt;&lt;a href=&quot;#算法思想&quot; class=&quot;headerlink&quot; title=&quot;算法思想&quot;&gt;&lt;/a&gt;算法思想&lt;/h2&gt;&lt;p&gt;从连通网络N={v,E}中的某一个顶点v0出发，选择与他关联的具有最小权值的边（u0，v），将其顶点加入生成树的顶点集合U。
+      
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="https://zhaobuqi-01.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>交通咨询</title>
@@ -412,30 +434,6 @@
       
         &lt;h1 id=&quot;顺序结构&quot;&gt;&lt;a href=&quot;#顺序结构&quot; class=&quot;headerlink&quot; title=&quot;顺序结构&quot;&gt;&lt;/a&gt;顺序结构&lt;/h1&gt;&lt;p&gt;程序从上到下逐次地执行，中间没有任何判断与跳转。&lt;/p&gt;
 &lt;h1 id=&quot;分支控制&quot;&gt;&lt;a href=&quot;#分支控制&quot; cla
-      
-    
-    </summary>
-    
-    
-      <category term="go" scheme="https://zhaobuqi-01.github.io/categories/go/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>位运算符</title>
-    <link href="https://zhaobuqi-01.github.io/2020/10/05/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    <id>https://zhaobuqi-01.github.io/2020/10/05/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6/</id>
-    <published>2020-10-05T12:13:38.000Z</published>
-    <updated>2020-10-05T12:29:31.473Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;位运算符&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&amp;amp;&lt;/strong&gt;     按位与           两个都为1才为1&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;|&lt;/strong&gt;     按位或            只要有一个1就为1&lt;/p
       
     
     </summary>
